@@ -1,0 +1,206 @@
+[
+  {
+    "id": "416d8cac-3561-8082-b203-d4ee0fb72fd1",
+    "title": "Configure a Gmail Account in Outlook for Windows",
+    "slug": "configure-a-gmail-account-in-outlook-for-windows",
+    "summary": "Combining the power of Gmail with Microsoft Outlook for Windows lets you manage all of your emails, calendars, and tasks in one unified, feature-rich workspace. Whether you are using the traditional Classic Outlook or the updated New Outlook on Windows, setting up your Gmail takes only a few minutes.",
+    "category": {
+      "name": "Integration",
+      "color": "brown"
+    },
+    "tags": [
+      {
+        "name": "Gmail",
+        "color": "green"
+      },
+      {
+        "name": "Outlook",
+        "color": "purple"
+      },
+      {
+        "name": "Windows",
+        "color": "default"
+      },
+      {
+        "name": "Setup",
+        "color": "default"
+      },
+      {
+        "name": "IMAP",
+        "color": "red"
+      },
+      {
+        "name": "Email",
+        "color": "gray"
+      },
+      {
+        "name": "Configuration",
+        "color": "orange"
+      },
+      {
+        "name": "Synchronization",
+        "color": "green"
+      }
+    ],
+    "readTime": "4 Minutes",
+    "date": "2026-11-12",
+    "published": true,
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/e35d8cac-3561-816d-809b-0003d4500ad1/187381e6-3117-4beb-bc88-9c545258a5b9/gmail-outlook.png?X-Amz-Algorithm\u003dAWS4-HMAC-SHA256\u0026X-Amz-Content-Sha256\u003dUNSIGNED-PAYLOAD\u0026X-Amz-Credential\u003dASIAZI2LB466XWVSBUGX%2F20261112%2Fus-west-2%2Fs3%2Faws4_request\u0026X-Amz-Date\u003d20261112T182230Z\u0026X-Amz-Expires\u003d3600\u0026X-Amz-Security-Token\u003dIQoJb3JpZ2luX2VjEKn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIC27jMakU19%2FSKao6G21Tp%2BWoM%2F4nWEw6v8svaBe0JquAiEAok6oOUWzsaOPVpHiMrPjrEcucJbacRzkGZiPDxeW8asq%2FwMIcRAAGgw2Mzc0MjMxODM4MDUiDJr4xBzVUe8cmxoqlSrcA3OV%2Bh4qYR6t%2Fpxe35FSkBa2FJAQRf7ohzOTUfTO%2FFkdP7S1RKvC39%2BZVy%2B5CVLxrX%2FNvhAUJfZod784j6D7Z9RiujPg98%2B3u2UMWhmBcp8YXeETfJbAl6%2FD%2BPFISgva%2FuES9KNV%2B%2Bw4csq%2BdAbE5W%2B8BKDgViCXTJ8D2lu5gmOqx9UGvdd91z6qw5Ccx6jPGm%2BkeOyjFUWuzMiRjTxN1CO5B%2FonDZSZvvShShG9NzYS4vXtRbGoAmqluL5VXAMa7BPaNv13R8pYnwW%2F94RBHU2QnCYqGGFH7XBV2yoLD5RGBJgRdJBwrAOE%2BQLve3cBaFIaH5KjaIG66968ywIAwdD4GzKlDDpkcohwLABfZj%2BMjoRdnrw%2FhTFpmpJaEJxvnr9lNg1G8hrfWDdNCy3A9RXm5OKc2xAMaBNEtYT9i%2F4oZ1CNIfkSkuoPcyyQen%2BdfyH0zS9cq%2FGx2NL8kxUV82EcPV%2BNiShll9WpX8V4V7isc9ltO7k9rlsPkb2ixxsDTbUwC6tb25Wc7j01n9EXP6QYfGvck58%2BcsCSGyp2bHQM0YSAXZZfoSI6C6DvsRYTVztF2mIQfqgOLtO217L%2Bi5Q9LRAgEeEtgYgO1gzl73hUDJFzAw43MyaNjK%2FLMOnS19cGOqUBRw8LhNtp%2FTe56OZOZYexmUn2G4Yzy4VZ3pPAfTcp62jnY88drNkt%2FRkgt3X3y26UYhMr9CthqtWPpGAnliDDCeIdJSsY%2FUg4rGIhAs2otihWfqdnjgee51OTtyXu%2BbWONiuLYOKkYTHMS9NOsU9VaclRxMKafYUCB%2B9QovlkSRRuf1DOyGQpkXNJK6UGpdu8ae79Gvet9Emux6%2ByartrXn%2BPd22k\u0026X-Amz-Signature\u003d97e10f659e2861ce18e02854bdbeac966a92a7beedcf4326e26e15e57faba574\u0026X-Amz-SignedHeaders\u003dhost\u0026x-amz-checksum-mode\u003dENABLED\u0026x-id\u003dGetObject",
+    "localCoverImage": "/static/media/configure-a-gmail-account-in-outlook-for-windows/cover.png",
+    "lastEditedTime": "2026-11-12T16:42:00.000Z"
+  },
+  {
+    "id": "416d8cac-3561-80e9-ae0b-cf79bc0d9ebc",
+    "title": "Enable USB Restriction GPO in Windows Server",
+    "slug": "enable-usb-restriction-gpo-in-windows-server",
+    "summary": "Restricting unauthorized USB storage devices on your company’s network is a fundamental security practice. Using Group Policy Objects (GPO) in Windows Server, you can globally prevent users from plugging in thumb drives, external hard disks, and other removable media, reducing the risk of data theft and malware infections. Implementing this restriction does not affect vital USB devices like keyboards or mice, as the policy targets the Removable Storage Access class rather than standard human interface devices (HIDs).",
+    "category": {
+      "name": "GPMC",
+      "color": "green"
+    },
+    "tags": [
+      {
+        "name": "GroupPolicy",
+        "color": "default"
+      },
+      {
+        "name": "WindowsServer",
+        "color": "default"
+      },
+      {
+        "name": "USBRestriction",
+        "color": "green"
+      },
+      {
+        "name": "GPMC",
+        "color": "yellow"
+      },
+      {
+        "name": "ActiveDirectory",
+        "color": "purple"
+      },
+      {
+        "name": "Cybersecurity",
+        "color": "green"
+      },
+      {
+        "name": "BlockUSB",
+        "color": "orange"
+      },
+      {
+        "name": "SysAdmin",
+        "color": "pink"
+      },
+      {
+        "name": "EndpointSecurity",
+        "color": "blue"
+      }
+    ],
+    "readTime": "4 Minutes",
+    "date": "2026-11-12",
+    "published": true,
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/e35d8cac-3561-816d-809b-0003d4500ad1/7bf01834-84ca-45d9-a541-6007a8a4f89c/USB.png?X-Amz-Algorithm\u003dAWS4-HMAC-SHA256\u0026X-Amz-Content-Sha256\u003dUNSIGNED-PAYLOAD\u0026X-Amz-Credential\u003dASIAZI2LB466XWVSBUGX%2F20261112%2Fus-west-2%2Fs3%2Faws4_request\u0026X-Amz-Date\u003d20261112T182230Z\u0026X-Amz-Expires\u003d3600\u0026X-Amz-Security-Token\u003dIQoJb3JpZ2luX2VjEKn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIC27jMakU19%2FSKao6G21Tp%2BWoM%2F4nWEw6v8svaBe0JquAiEAok6oOUWzsaOPVpHiMrPjrEcucJbacRzkGZiPDxeW8asq%2FwMIcRAAGgw2Mzc0MjMxODM4MDUiDJr4xBzVUe8cmxoqlSrcA3OV%2Bh4qYR6t%2Fpxe35FSkBa2FJAQRf7ohzOTUfTO%2FFkdP7S1RKvC39%2BZVy%2B5CVLxrX%2FNvhAUJfZod784j6D7Z9RiujPg98%2B3u2UMWhmBcp8YXeETfJbAl6%2FD%2BPFISgva%2FuES9KNV%2B%2Bw4csq%2BdAbE5W%2B8BKDgViCXTJ8D2lu5gmOqx9UGvdd91z6qw5Ccx6jPGm%2BkeOyjFUWuzMiRjTxN1CO5B%2FonDZSZvvShShG9NzYS4vXtRbGoAmqluL5VXAMa7BPaNv13R8pYnwW%2F94RBHU2QnCYqGGFH7XBV2yoLD5RGBJgRdJBwrAOE%2BQLve3cBaFIaH5KjaIG66968ywIAwdD4GzKlDDpkcohwLABfZj%2BMjoRdnrw%2FhTFpmpJaEJxvnr9lNg1G8hrfWDdNCy3A9RXm5OKc2xAMaBNEtYT9i%2F4oZ1CNIfkSkuoPcyyQen%2BdfyH0zS9cq%2FGx2NL8kxUV82EcPV%2BNiShll9WpX8V4V7isc9ltO7k9rlsPkb2ixxsDTbUwC6tb25Wc7j01n9EXP6QYfGvck58%2BcsCSGyp2bHQM0YSAXZZfoSI6C6DvsRYTVztF2mIQfqgOLtO217L%2Bi5Q9LRAgEeEtgYgO1gzl73hUDJFzAw43MyaNjK%2FLMOnS19cGOqUBRw8LhNtp%2FTe56OZOZYexmUn2G4Yzy4VZ3pPAfTcp62jnY88drNkt%2FRkgt3X3y26UYhMr9CthqtWPpGAnliDDCeIdJSsY%2FUg4rGIhAs2otihWfqdnjgee51OTtyXu%2BbWONiuLYOKkYTHMS9NOsU9VaclRxMKafYUCB%2B9QovlkSRRuf1DOyGQpkXNJK6UGpdu8ae79Gvet9Emux6%2ByartrXn%2BPd22k\u0026X-Amz-Signature\u003d8630787a064c65a4b606d388ce34bc982b571e716bab6de6f74831a134cbee79\u0026X-Amz-SignedHeaders\u003dhost\u0026x-amz-checksum-mode\u003dENABLED\u0026x-id\u003dGetObject",
+    "localCoverImage": "/static/media/enable-usb-restriction-gpo-in-windows-server/cover.png",
+    "lastEditedTime": "2026-11-12T16:33:00.000Z"
+  },
+  {
+    "id": "416d8cac-3561-80e7-9654-d9d26060d539",
+    "title": "Install Active Directory on Ubuntu Server",
+    "slug": "install-active-directory-on-ubuntu-server",
+    "summary": "Deploying an Active Directory Domain Controller (AD DC) on Ubuntu Server is entirely possible without Windows Server, thanks to the power of Samba4. Samba4 mimics a Windows Server Active Directory environment, allowing you to centrally manage users, computers, group policies, and DNS.",
+    "category": {
+      "name": "Samba4",
+      "color": "blue"
+    },
+    "tags": [
+      {
+        "name": "Ubuntu",
+        "color": "green"
+      },
+      {
+        "name": "SambaAD",
+        "color": "gray"
+      },
+      {
+        "name": "ActiveDirectory",
+        "color": "purple"
+      },
+      {
+        "name": "LinuxSysAdmin",
+        "color": "red"
+      },
+      {
+        "name": "Kerberos",
+        "color": "blue"
+      },
+      {
+        "name": "OpenSource",
+        "color": "yellow"
+      },
+      {
+        "name": "ITInfrastructure",
+        "color": "blue"
+      },
+      {
+        "name": "Networking",
+        "color": "orange"
+      }
+    ],
+    "readTime": "7 Minutes",
+    "date": "2026-11-12",
+    "published": true,
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/e35d8cac-3561-816d-809b-0003d4500ad1/27812231-7475-4d90-9b24-d7e01c80a89e/Samba.png?X-Amz-Algorithm\u003dAWS4-HMAC-SHA256\u0026X-Amz-Content-Sha256\u003dUNSIGNED-PAYLOAD\u0026X-Amz-Credential\u003dASIAZI2LB466XWVSBUGX%2F20261112%2Fus-west-2%2Fs3%2Faws4_request\u0026X-Amz-Date\u003d20261112T182230Z\u0026X-Amz-Expires\u003d3600\u0026X-Amz-Security-Token\u003dIQoJb3JpZ2luX2VjEKn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIC27jMakU19%2FSKao6G21Tp%2BWoM%2F4nWEw6v8svaBe0JquAiEAok6oOUWzsaOPVpHiMrPjrEcucJbacRzkGZiPDxeW8asq%2FwMIcRAAGgw2Mzc0MjMxODM4MDUiDJr4xBzVUe8cmxoqlSrcA3OV%2Bh4qYR6t%2Fpxe35FSkBa2FJAQRf7ohzOTUfTO%2FFkdP7S1RKvC39%2BZVy%2B5CVLxrX%2FNvhAUJfZod784j6D7Z9RiujPg98%2B3u2UMWhmBcp8YXeETfJbAl6%2FD%2BPFISgva%2FuES9KNV%2B%2Bw4csq%2BdAbE5W%2B8BKDgViCXTJ8D2lu5gmOqx9UGvdd91z6qw5Ccx6jPGm%2BkeOyjFUWuzMiRjTxN1CO5B%2FonDZSZvvShShG9NzYS4vXtRbGoAmqluL5VXAMa7BPaNv13R8pYnwW%2F94RBHU2QnCYqGGFH7XBV2yoLD5RGBJgRdJBwrAOE%2BQLve3cBaFIaH5KjaIG66968ywIAwdD4GzKlDDpkcohwLABfZj%2BMjoRdnrw%2FhTFpmpJaEJxvnr9lNg1G8hrfWDdNCy3A9RXm5OKc2xAMaBNEtYT9i%2F4oZ1CNIfkSkuoPcyyQen%2BdfyH0zS9cq%2FGx2NL8kxUV82EcPV%2BNiShll9WpX8V4V7isc9ltO7k9rlsPkb2ixxsDTbUwC6tb25Wc7j01n9EXP6QYfGvck58%2BcsCSGyp2bHQM0YSAXZZfoSI6C6DvsRYTVztF2mIQfqgOLtO217L%2Bi5Q9LRAgEeEtgYgO1gzl73hUDJFzAw43MyaNjK%2FLMOnS19cGOqUBRw8LhNtp%2FTe56OZOZYexmUn2G4Yzy4VZ3pPAfTcp62jnY88drNkt%2FRkgt3X3y26UYhMr9CthqtWPpGAnliDDCeIdJSsY%2FUg4rGIhAs2otihWfqdnjgee51OTtyXu%2BbWONiuLYOKkYTHMS9NOsU9VaclRxMKafYUCB%2B9QovlkSRRuf1DOyGQpkXNJK6UGpdu8ae79Gvet9Emux6%2ByartrXn%2BPd22k\u0026X-Amz-Signature\u003d50b405e9a3e345d12f71f10cb81f800d2f7e9aa6e67a8fe55d2b0fe4f3ca2fb8\u0026X-Amz-SignedHeaders\u003dhost\u0026x-amz-checksum-mode\u003dENABLED\u0026x-id\u003dGetObject",
+    "localCoverImage": "/static/media/install-active-directory-on-ubuntu-server/cover.png",
+    "lastEditedTime": "2026-11-12T16:33:00.000Z"
+  },
+  {
+    "id": "416d8cac-3561-8023-9cc0-c00b03515031",
+    "title": "Configure Active Directory in Windows Server 2025",
+    "slug": "configure-active-directory-in-windows-server-2025",
+    "summary": "Active Directory Domain Services (AD DS) is the central authority for identity, authentication, and security policies in a Windows environment. In Windows Server 2025, establishing a Domain Controller remains a strict two-phase process: first, installing the AD DS server role, and second, promoting the server to act as a Domain Controller. ",
+    "category": {
+      "name": "Active Directory in Windows Server 2025",
+      "color": "default"
+    },
+    "tags": [
+      {
+        "name": "ActiveDirectory",
+        "color": "purple"
+      },
+      {
+        "name": "WindowsServer2025",
+        "color": "yellow"
+      },
+      {
+        "name": "ADDS",
+        "color": "brown"
+      },
+      {
+        "name": "DomainController",
+        "color": "gray"
+      },
+      {
+        "name": "SysAdmin",
+        "color": "pink"
+      },
+      {
+        "name": "Configuration",
+        "color": "orange"
+      },
+      {
+        "name": "Microsoft",
+        "color": "red"
+      },
+      {
+        "name": "ITInfrastructure",
+        "color": "blue"
+      }
+    ],
+    "readTime": "5 Minutes",
+    "date": "2026-11-12",
+    "published": true,
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/e35d8cac-3561-816d-809b-0003d4500ad1/f44884e0-36bd-4813-9af5-659873c39ae0/Win2025.png?X-Amz-Algorithm\u003dAWS4-HMAC-SHA256\u0026X-Amz-Content-Sha256\u003dUNSIGNED-PAYLOAD\u0026X-Amz-Credential\u003dASIAZI2LB466XWVSBUGX%2F20261112%2Fus-west-2%2Fs3%2Faws4_request\u0026X-Amz-Date\u003d20261112T182230Z\u0026X-Amz-Expires\u003d3600\u0026X-Amz-Security-Token\u003dIQoJb3JpZ2luX2VjEKn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIC27jMakU19%2FSKao6G21Tp%2BWoM%2F4nWEw6v8svaBe0JquAiEAok6oOUWzsaOPVpHiMrPjrEcucJbacRzkGZiPDxeW8asq%2FwMIcRAAGgw2Mzc0MjMxODM4MDUiDJr4xBzVUe8cmxoqlSrcA3OV%2Bh4qYR6t%2Fpxe35FSkBa2FJAQRf7ohzOTUfTO%2FFkdP7S1RKvC39%2BZVy%2B5CVLxrX%2FNvhAUJfZod784j6D7Z9RiujPg98%2B3u2UMWhmBcp8YXeETfJbAl6%2FD%2BPFISgva%2FuES9KNV%2B%2Bw4csq%2BdAbE5W%2B8BKDgViCXTJ8D2lu5gmOqx9UGvdd91z6qw5Ccx6jPGm%2BkeOyjFUWuzMiRjTxN1CO5B%2FonDZSZvvShShG9NzYS4vXtRbGoAmqluL5VXAMa7BPaNv13R8pYnwW%2F94RBHU2QnCYqGGFH7XBV2yoLD5RGBJgRdJBwrAOE%2BQLve3cBaFIaH5KjaIG66968ywIAwdD4GzKlDDpkcohwLABfZj%2BMjoRdnrw%2FhTFpmpJaEJxvnr9lNg1G8hrfWDdNCy3A9RXm5OKc2xAMaBNEtYT9i%2F4oZ1CNIfkSkuoPcyyQen%2BdfyH0zS9cq%2FGx2NL8kxUV82EcPV%2BNiShll9WpX8V4V7isc9ltO7k9rlsPkb2ixxsDTbUwC6tb25Wc7j01n9EXP6QYfGvck58%2BcsCSGyp2bHQM0YSAXZZfoSI6C6DvsRYTVztF2mIQfqgOLtO217L%2Bi5Q9LRAgEeEtgYgO1gzl73hUDJFzAw43MyaNjK%2FLMOnS19cGOqUBRw8LhNtp%2FTe56OZOZYexmUn2G4Yzy4VZ3pPAfTcp62jnY88drNkt%2FRkgt3X3y26UYhMr9CthqtWPpGAnliDDCeIdJSsY%2FUg4rGIhAs2otihWfqdnjgee51OTtyXu%2BbWONiuLYOKkYTHMS9NOsU9VaclRxMKafYUCB%2B9QovlkSRRuf1DOyGQpkXNJK6UGpdu8ae79Gvet9Emux6%2ByartrXn%2BPd22k\u0026X-Amz-Signature\u003d4e25a2b0a4b368ef78718329bba0ab80e438ac2d0bbc163e0261e48f87540bc6\u0026X-Amz-SignedHeaders\u003dhost\u0026x-amz-checksum-mode\u003dENABLED\u0026x-id\u003dGetObject",
+    "localCoverImage": "/static/media/configure-active-directory-in-windows-server-2025/cover.png",
+    "lastEditedTime": "2026-11-12T16:30:00.000Z"
+  }
+]
