@@ -1,5 +1,63 @@
 [
   {
+    "id": "417d8cac-3561-80ff-a34f-d175d9513460",
+    "title": "Securing Endpoints: Configure Policies in ManageEngine Device Control Plus",
+    "slug": "securing-endpoints-configure-policies-in-manageengine-device-control-plus",
+    "summary": "Configuring a robust Device Control Plus (DCP) policy is critical for two primary reasons: Data Loss Prevention (DLP) and malware protection. Unrestricted USB ports are major vulnerabilities, allowing insiders to easily exfiltrate sensitive corporate data or accidentally introduce ransomware into the network. By enforcing strict access policies—like read-only permissions or trusted-device whitelisting—DCP mitigates these insider threats and stops automated attacks like BadUSB. Furthermore, maintaining strict peripheral control ensures organizations meet stringent regulatory compliance standards, such as GDPR and HIPAA, by providing comprehensive audit trails of all file transfers and device connections across the enterprise environment.",
+    "category": {
+      "name": "DeviceControl",
+      "color": "pink"
+    },
+    "tags": [
+      {
+        "name": "ManageEngine",
+        "color": "blue"
+      },
+      {
+        "name": "DLP",
+        "color": "purple"
+      },
+      {
+        "name": "Configuration",
+        "color": "orange"
+      },
+      {
+        "name": "Security",
+        "color": "yellow"
+      },
+      {
+        "name": "Endpoints",
+        "color": "green"
+      },
+      {
+        "name": "USB",
+        "color": "brown"
+      },
+      {
+        "name": "Policies",
+        "color": "brown"
+      },
+      {
+        "name": "Deployment",
+        "color": "pink"
+      },
+      {
+        "name": "Auditing",
+        "color": "yellow"
+      },
+      {
+        "name": "Protection",
+        "color": "brown"
+      }
+    ],
+    "readTime": "4 Minutes",
+    "date": "2026-11-13",
+    "published": true,
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/e35d8cac-3561-816d-809b-0003d4500ad1/64a1587e-f0e2-44fd-8c57-34aaa016c735/DCP.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WIZ7CF%2F20261113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261113T042320Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCQmDeJiX%2FeBUSwSL9cxoGI6AsvP84m%2BhkPbwQlAXGYjgIgJz0GnKd24XlvjXm2RoIfO9QW3WPxkleNw6U9M%2FkuetAq%2FwMIehAAGgw2Mzc0MjMxODM4MDUiDGkRYCZWFHMJ1myl2ircAzulne97XcrRMxxA4qSd1NVW0xQoQ6FOKt%2Bg35oNgKqaXfR%2FApzMcZK1zQ6KCqwh5lItVBcbEaaYuGYf1gi1gNdXuZa4ox0cO%2FoMDalR1uMUBmDyF1ZoPzKc90Ze3UGuA9E4%2F9%2Fh2tNMmom%2FeDiMuzH0Uc7sBwmigjX22hAqQt1slCtQSWnqC1nvlkwfPoETwHl5cMyh7zJCcmjC7puIKMH2coXyU2ufNLFCnuiJNp8%2BuUgfQ9hUKmDzhJ1yzejVIIm9KWM8BQTAC7JVLYJw%2FalPrp759AuZOEA%2FwryYbE8N0GxvcTLbPRT3oO6TAyD5GU5Dkm2pc3HpKj3I%2B1%2F3Aq0SwOyJbfEKhc700hdtlUPjpBElhmD71ELJFN5FUnXWdbY%2FqSxaXpIC6KubVYPuZnGs%2B7hCchDA7fABfbKWl4OA59ZlDsektaeFprjDSfCzJeHi0sdFy%2BCXB03IrKWA0nCyRc9J2SBt4DgLu%2B5hHr3FGIkPG60kaMQp3W9psUtPkctHpZaPCr8LOLRyaBRSOBGVfUXROiQjOYYfM30PBoenDu9Rx4Hd%2Bcn9YKCm9JeFhUZ406mfs3U8Rd3h8Wh7KXLDk5rFIl%2BifciZeK91MRimWOjDTeOLxoC1O3OKMJrY2dcGOqUB2IWsfF8A%2B%2FFdjHIoAZMQmEniTy0QwtYDpcC2fgJ5ntc6eocimqogD7G7Gb0NuVzNU7miqW2VtM0czLK6dbBHvRuGvNKy50zogpVuumYOzPkmKOLC4Ii6SuOaF8wrDivTw7%2FMg2F3pPxLsh%2BNWjMrZPhyRhoCrdxkH8QyHIjPesKX7rxrV10S%2BNlqy8bjt%2BoeR7LyHSAp6QcGQiC5eCzlDTqk1F2u&X-Amz-Signature=0d81bddf3d211fb740c5ac1fca451ec4cbd86d0179676e0d576c04a5b399d003&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "localCoverImage": "/static/media/securing-endpoints-configure-policies-in-manageengine-device-control-plus/cover.png",
+    "lastEditedTime": "2026-11-13T04:15:00.000Z"
+  },
+  {
     "id": "416d8cac-3561-80e9-ae0b-cf79bc0d9ebc",
     "title": "Enable USB Restriction GPO in Windows Server",
     "slug": "enable-usb-restriction-gpo-in-windows-server",
@@ -49,7 +107,7 @@
     "readTime": "4 Minutes",
     "date": "2026-11-12",
     "published": true,
-    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/e35d8cac-3561-816d-809b-0003d4500ad1/7bf01834-84ca-45d9-a541-6007a8a4f89c/USB.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UTGGTWUI%2F20261113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261113T040930Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCKZQlDa4XdMN99X23DXfZ1OJpDmYKqwb%2FfVhGFyFBkrgIhAP9jLWV3D199vw%2ByTZLhhHL%2BqJcRNjnf5ih0s%2FriqduJKv8DCHsQABoMNjM3NDIzMTgzODA1IgwOanroc%2B0FzH9JRmgq3AN92jCFk8khpbuKtLxXQaHH%2BZKMykuRP6dgyniopQOjOz8YY2%2Fb%2F18RgeXbYErhVzfb5PS5OVyaWMLNiTZnIVUwb926kqxiwI0pMX0GcAl2uSgmKIFUcjhPnrEmWPiAO25PR5ivMV1H0rgEiD2BYhKpZPL7D97cv0wQXaCxKhURLh6BSAqVeP4dStckA4%2BRvG7a%2BoofeIZPBbQfGamt%2Fkd%2FO%2FqIR8r8kvvUikos8BHOH6DKdgSmtQdWoWQwQiYXoBON1xTnWs0SYqz7ELVhXVK4Q4BsPBxMJSv19DA3pEuZMily3SrRj24cFsXrhE7ynxcgqtlDa3v8b2OwpcLY9If9WwBeIlfanku%2FmnSHPTnrNy6bWrCjkQr0iOsHXz3Y47s4Zhu12QDQu4Y%2F7tolL5VwrcEprPxeUK7vUTnGtsFwoin%2FJwXZsQSlOVfYiV0ttFxsG%2B1Mp3yp4oCsu89VjiZe1jzNVrB%2FqK3%2F2hz74rD6A41gasE9vYI3DvbUcSNAyqT9McTdVeDwq3GV89QqxBQ3X2heEKRNLp7UvCPBsWNhcJIkFiJA%2ByXzLP7YK91F4egXxF4djhNs3mMvd7uNl8MaCKH94wg96dOzgGqathOSngMA3eW2ZYii3%2BnRgjDw2dnXBjqkAQ1nBHnAdYkot8CuCHlMUL%2FMOjAK%2FpkAXYofb2jYPMd1qAocobW02lf9dGXir8X5qbYEWCy85iFY9h6NAIKC6wpqUqRN%2Fvj0jKdEZZpQN6cMVB%2Foibo38E4TmS4wq6IL%2BTvrY02bGvQEwYZptukRSIKlAv%2FQ9sVXRHG6QHYXB%2FFCiOdOkXkKTwUq%2FjggyNropGs0VoyOWgWTDHW5FRcJ4r9mQo%2FR&X-Amz-Signature=e0c19de711d288931e91fda797df742baffbe6113a2e678bb0cbfa34bef920cd&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/e35d8cac-3561-816d-809b-0003d4500ad1/7bf01834-84ca-45d9-a541-6007a8a4f89c/USB.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WIZ7CF%2F20261113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261113T042320Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCQmDeJiX%2FeBUSwSL9cxoGI6AsvP84m%2BhkPbwQlAXGYjgIgJz0GnKd24XlvjXm2RoIfO9QW3WPxkleNw6U9M%2FkuetAq%2FwMIehAAGgw2Mzc0MjMxODM4MDUiDGkRYCZWFHMJ1myl2ircAzulne97XcrRMxxA4qSd1NVW0xQoQ6FOKt%2Bg35oNgKqaXfR%2FApzMcZK1zQ6KCqwh5lItVBcbEaaYuGYf1gi1gNdXuZa4ox0cO%2FoMDalR1uMUBmDyF1ZoPzKc90Ze3UGuA9E4%2F9%2Fh2tNMmom%2FeDiMuzH0Uc7sBwmigjX22hAqQt1slCtQSWnqC1nvlkwfPoETwHl5cMyh7zJCcmjC7puIKMH2coXyU2ufNLFCnuiJNp8%2BuUgfQ9hUKmDzhJ1yzejVIIm9KWM8BQTAC7JVLYJw%2FalPrp759AuZOEA%2FwryYbE8N0GxvcTLbPRT3oO6TAyD5GU5Dkm2pc3HpKj3I%2B1%2F3Aq0SwOyJbfEKhc700hdtlUPjpBElhmD71ELJFN5FUnXWdbY%2FqSxaXpIC6KubVYPuZnGs%2B7hCchDA7fABfbKWl4OA59ZlDsektaeFprjDSfCzJeHi0sdFy%2BCXB03IrKWA0nCyRc9J2SBt4DgLu%2B5hHr3FGIkPG60kaMQp3W9psUtPkctHpZaPCr8LOLRyaBRSOBGVfUXROiQjOYYfM30PBoenDu9Rx4Hd%2Bcn9YKCm9JeFhUZ406mfs3U8Rd3h8Wh7KXLDk5rFIl%2BifciZeK91MRimWOjDTeOLxoC1O3OKMJrY2dcGOqUB2IWsfF8A%2B%2FFdjHIoAZMQmEniTy0QwtYDpcC2fgJ5ntc6eocimqogD7G7Gb0NuVzNU7miqW2VtM0czLK6dbBHvRuGvNKy50zogpVuumYOzPkmKOLC4Ii6SuOaF8wrDivTw7%2FMg2F3pPxLsh%2BNWjMrZPhyRhoCrdxkH8QyHIjPesKX7rxrV10S%2BNlqy8bjt%2BoeR7LyHSAp6QcGQiC5eCzlDTqk1F2u&X-Amz-Signature=63cf49465067fb366d969bb6c42c3c611677bbdf10b45b6e5020f2bd02b42044&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
     "localCoverImage": "/static/media/enable-usb-restriction-gpo-in-windows-server/cover.png",
     "lastEditedTime": "2026-11-13T03:53:00.000Z"
   },
@@ -99,7 +157,7 @@
     "readTime": "4 Minutes",
     "date": "2026-11-12",
     "published": true,
-    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/e35d8cac-3561-816d-809b-0003d4500ad1/187381e6-3117-4beb-bc88-9c545258a5b9/gmail-outlook.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UTGGTWUI%2F20261113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261113T040930Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCKZQlDa4XdMN99X23DXfZ1OJpDmYKqwb%2FfVhGFyFBkrgIhAP9jLWV3D199vw%2ByTZLhhHL%2BqJcRNjnf5ih0s%2FriqduJKv8DCHsQABoMNjM3NDIzMTgzODA1IgwOanroc%2B0FzH9JRmgq3AN92jCFk8khpbuKtLxXQaHH%2BZKMykuRP6dgyniopQOjOz8YY2%2Fb%2F18RgeXbYErhVzfb5PS5OVyaWMLNiTZnIVUwb926kqxiwI0pMX0GcAl2uSgmKIFUcjhPnrEmWPiAO25PR5ivMV1H0rgEiD2BYhKpZPL7D97cv0wQXaCxKhURLh6BSAqVeP4dStckA4%2BRvG7a%2BoofeIZPBbQfGamt%2Fkd%2FO%2FqIR8r8kvvUikos8BHOH6DKdgSmtQdWoWQwQiYXoBON1xTnWs0SYqz7ELVhXVK4Q4BsPBxMJSv19DA3pEuZMily3SrRj24cFsXrhE7ynxcgqtlDa3v8b2OwpcLY9If9WwBeIlfanku%2FmnSHPTnrNy6bWrCjkQr0iOsHXz3Y47s4Zhu12QDQu4Y%2F7tolL5VwrcEprPxeUK7vUTnGtsFwoin%2FJwXZsQSlOVfYiV0ttFxsG%2B1Mp3yp4oCsu89VjiZe1jzNVrB%2FqK3%2F2hz74rD6A41gasE9vYI3DvbUcSNAyqT9McTdVeDwq3GV89QqxBQ3X2heEKRNLp7UvCPBsWNhcJIkFiJA%2ByXzLP7YK91F4egXxF4djhNs3mMvd7uNl8MaCKH94wg96dOzgGqathOSngMA3eW2ZYii3%2BnRgjDw2dnXBjqkAQ1nBHnAdYkot8CuCHlMUL%2FMOjAK%2FpkAXYofb2jYPMd1qAocobW02lf9dGXir8X5qbYEWCy85iFY9h6NAIKC6wpqUqRN%2Fvj0jKdEZZpQN6cMVB%2Foibo38E4TmS4wq6IL%2BTvrY02bGvQEwYZptukRSIKlAv%2FQ9sVXRHG6QHYXB%2FFCiOdOkXkKTwUq%2FjggyNropGs0VoyOWgWTDHW5FRcJ4r9mQo%2FR&X-Amz-Signature=a3b099afb839ac07bd9435bb1ed077a73dfc33002c12a0aeb65b84b892e915b6&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/e35d8cac-3561-816d-809b-0003d4500ad1/187381e6-3117-4beb-bc88-9c545258a5b9/gmail-outlook.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WIZ7CF%2F20261113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261113T042320Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCQmDeJiX%2FeBUSwSL9cxoGI6AsvP84m%2BhkPbwQlAXGYjgIgJz0GnKd24XlvjXm2RoIfO9QW3WPxkleNw6U9M%2FkuetAq%2FwMIehAAGgw2Mzc0MjMxODM4MDUiDGkRYCZWFHMJ1myl2ircAzulne97XcrRMxxA4qSd1NVW0xQoQ6FOKt%2Bg35oNgKqaXfR%2FApzMcZK1zQ6KCqwh5lItVBcbEaaYuGYf1gi1gNdXuZa4ox0cO%2FoMDalR1uMUBmDyF1ZoPzKc90Ze3UGuA9E4%2F9%2Fh2tNMmom%2FeDiMuzH0Uc7sBwmigjX22hAqQt1slCtQSWnqC1nvlkwfPoETwHl5cMyh7zJCcmjC7puIKMH2coXyU2ufNLFCnuiJNp8%2BuUgfQ9hUKmDzhJ1yzejVIIm9KWM8BQTAC7JVLYJw%2FalPrp759AuZOEA%2FwryYbE8N0GxvcTLbPRT3oO6TAyD5GU5Dkm2pc3HpKj3I%2B1%2F3Aq0SwOyJbfEKhc700hdtlUPjpBElhmD71ELJFN5FUnXWdbY%2FqSxaXpIC6KubVYPuZnGs%2B7hCchDA7fABfbKWl4OA59ZlDsektaeFprjDSfCzJeHi0sdFy%2BCXB03IrKWA0nCyRc9J2SBt4DgLu%2B5hHr3FGIkPG60kaMQp3W9psUtPkctHpZaPCr8LOLRyaBRSOBGVfUXROiQjOYYfM30PBoenDu9Rx4Hd%2Bcn9YKCm9JeFhUZ406mfs3U8Rd3h8Wh7KXLDk5rFIl%2BifciZeK91MRimWOjDTeOLxoC1O3OKMJrY2dcGOqUB2IWsfF8A%2B%2FFdjHIoAZMQmEniTy0QwtYDpcC2fgJ5ntc6eocimqogD7G7Gb0NuVzNU7miqW2VtM0czLK6dbBHvRuGvNKy50zogpVuumYOzPkmKOLC4Ii6SuOaF8wrDivTw7%2FMg2F3pPxLsh%2BNWjMrZPhyRhoCrdxkH8QyHIjPesKX7rxrV10S%2BNlqy8bjt%2BoeR7LyHSAp6QcGQiC5eCzlDTqk1F2u&X-Amz-Signature=a68ed0f8cdd17d6eaee066dcf85f300b1b22fd1f3e537e3e6f972b0f42def9ac&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
     "localCoverImage": "/static/media/configure-a-gmail-account-in-outlook-for-windows/cover.png",
     "lastEditedTime": "2026-11-12T16:42:00.000Z"
   },
@@ -149,7 +207,7 @@
     "readTime": "7 Minutes",
     "date": "2026-11-12",
     "published": true,
-    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/e35d8cac-3561-816d-809b-0003d4500ad1/27812231-7475-4d90-9b24-d7e01c80a89e/Samba.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UTGGTWUI%2F20261113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261113T040930Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCKZQlDa4XdMN99X23DXfZ1OJpDmYKqwb%2FfVhGFyFBkrgIhAP9jLWV3D199vw%2ByTZLhhHL%2BqJcRNjnf5ih0s%2FriqduJKv8DCHsQABoMNjM3NDIzMTgzODA1IgwOanroc%2B0FzH9JRmgq3AN92jCFk8khpbuKtLxXQaHH%2BZKMykuRP6dgyniopQOjOz8YY2%2Fb%2F18RgeXbYErhVzfb5PS5OVyaWMLNiTZnIVUwb926kqxiwI0pMX0GcAl2uSgmKIFUcjhPnrEmWPiAO25PR5ivMV1H0rgEiD2BYhKpZPL7D97cv0wQXaCxKhURLh6BSAqVeP4dStckA4%2BRvG7a%2BoofeIZPBbQfGamt%2Fkd%2FO%2FqIR8r8kvvUikos8BHOH6DKdgSmtQdWoWQwQiYXoBON1xTnWs0SYqz7ELVhXVK4Q4BsPBxMJSv19DA3pEuZMily3SrRj24cFsXrhE7ynxcgqtlDa3v8b2OwpcLY9If9WwBeIlfanku%2FmnSHPTnrNy6bWrCjkQr0iOsHXz3Y47s4Zhu12QDQu4Y%2F7tolL5VwrcEprPxeUK7vUTnGtsFwoin%2FJwXZsQSlOVfYiV0ttFxsG%2B1Mp3yp4oCsu89VjiZe1jzNVrB%2FqK3%2F2hz74rD6A41gasE9vYI3DvbUcSNAyqT9McTdVeDwq3GV89QqxBQ3X2heEKRNLp7UvCPBsWNhcJIkFiJA%2ByXzLP7YK91F4egXxF4djhNs3mMvd7uNl8MaCKH94wg96dOzgGqathOSngMA3eW2ZYii3%2BnRgjDw2dnXBjqkAQ1nBHnAdYkot8CuCHlMUL%2FMOjAK%2FpkAXYofb2jYPMd1qAocobW02lf9dGXir8X5qbYEWCy85iFY9h6NAIKC6wpqUqRN%2Fvj0jKdEZZpQN6cMVB%2Foibo38E4TmS4wq6IL%2BTvrY02bGvQEwYZptukRSIKlAv%2FQ9sVXRHG6QHYXB%2FFCiOdOkXkKTwUq%2FjggyNropGs0VoyOWgWTDHW5FRcJ4r9mQo%2FR&X-Amz-Signature=f0c6b437dbe450840ef82ad92ce9e7a4e72364a6c807d2ac5a2799c6c51eca87&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/e35d8cac-3561-816d-809b-0003d4500ad1/27812231-7475-4d90-9b24-d7e01c80a89e/Samba.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WIZ7CF%2F20261113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261113T042320Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCQmDeJiX%2FeBUSwSL9cxoGI6AsvP84m%2BhkPbwQlAXGYjgIgJz0GnKd24XlvjXm2RoIfO9QW3WPxkleNw6U9M%2FkuetAq%2FwMIehAAGgw2Mzc0MjMxODM4MDUiDGkRYCZWFHMJ1myl2ircAzulne97XcrRMxxA4qSd1NVW0xQoQ6FOKt%2Bg35oNgKqaXfR%2FApzMcZK1zQ6KCqwh5lItVBcbEaaYuGYf1gi1gNdXuZa4ox0cO%2FoMDalR1uMUBmDyF1ZoPzKc90Ze3UGuA9E4%2F9%2Fh2tNMmom%2FeDiMuzH0Uc7sBwmigjX22hAqQt1slCtQSWnqC1nvlkwfPoETwHl5cMyh7zJCcmjC7puIKMH2coXyU2ufNLFCnuiJNp8%2BuUgfQ9hUKmDzhJ1yzejVIIm9KWM8BQTAC7JVLYJw%2FalPrp759AuZOEA%2FwryYbE8N0GxvcTLbPRT3oO6TAyD5GU5Dkm2pc3HpKj3I%2B1%2F3Aq0SwOyJbfEKhc700hdtlUPjpBElhmD71ELJFN5FUnXWdbY%2FqSxaXpIC6KubVYPuZnGs%2B7hCchDA7fABfbKWl4OA59ZlDsektaeFprjDSfCzJeHi0sdFy%2BCXB03IrKWA0nCyRc9J2SBt4DgLu%2B5hHr3FGIkPG60kaMQp3W9psUtPkctHpZaPCr8LOLRyaBRSOBGVfUXROiQjOYYfM30PBoenDu9Rx4Hd%2Bcn9YKCm9JeFhUZ406mfs3U8Rd3h8Wh7KXLDk5rFIl%2BifciZeK91MRimWOjDTeOLxoC1O3OKMJrY2dcGOqUB2IWsfF8A%2B%2FFdjHIoAZMQmEniTy0QwtYDpcC2fgJ5ntc6eocimqogD7G7Gb0NuVzNU7miqW2VtM0czLK6dbBHvRuGvNKy50zogpVuumYOzPkmKOLC4Ii6SuOaF8wrDivTw7%2FMg2F3pPxLsh%2BNWjMrZPhyRhoCrdxkH8QyHIjPesKX7rxrV10S%2BNlqy8bjt%2BoeR7LyHSAp6QcGQiC5eCzlDTqk1F2u&X-Amz-Signature=1cce4281942f62ada6ccf69aea2b1aa996363e21589e46e103fe555287010b28&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
     "localCoverImage": "/static/media/install-active-directory-on-ubuntu-server/cover.png",
     "lastEditedTime": "2026-11-12T16:33:00.000Z"
   },
@@ -199,7 +257,7 @@
     "readTime": "5 Minutes",
     "date": "2026-11-12",
     "published": true,
-    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/e35d8cac-3561-816d-809b-0003d4500ad1/f44884e0-36bd-4813-9af5-659873c39ae0/Win2025.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UTGGTWUI%2F20261113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261113T040930Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCKZQlDa4XdMN99X23DXfZ1OJpDmYKqwb%2FfVhGFyFBkrgIhAP9jLWV3D199vw%2ByTZLhhHL%2BqJcRNjnf5ih0s%2FriqduJKv8DCHsQABoMNjM3NDIzMTgzODA1IgwOanroc%2B0FzH9JRmgq3AN92jCFk8khpbuKtLxXQaHH%2BZKMykuRP6dgyniopQOjOz8YY2%2Fb%2F18RgeXbYErhVzfb5PS5OVyaWMLNiTZnIVUwb926kqxiwI0pMX0GcAl2uSgmKIFUcjhPnrEmWPiAO25PR5ivMV1H0rgEiD2BYhKpZPL7D97cv0wQXaCxKhURLh6BSAqVeP4dStckA4%2BRvG7a%2BoofeIZPBbQfGamt%2Fkd%2FO%2FqIR8r8kvvUikos8BHOH6DKdgSmtQdWoWQwQiYXoBON1xTnWs0SYqz7ELVhXVK4Q4BsPBxMJSv19DA3pEuZMily3SrRj24cFsXrhE7ynxcgqtlDa3v8b2OwpcLY9If9WwBeIlfanku%2FmnSHPTnrNy6bWrCjkQr0iOsHXz3Y47s4Zhu12QDQu4Y%2F7tolL5VwrcEprPxeUK7vUTnGtsFwoin%2FJwXZsQSlOVfYiV0ttFxsG%2B1Mp3yp4oCsu89VjiZe1jzNVrB%2FqK3%2F2hz74rD6A41gasE9vYI3DvbUcSNAyqT9McTdVeDwq3GV89QqxBQ3X2heEKRNLp7UvCPBsWNhcJIkFiJA%2ByXzLP7YK91F4egXxF4djhNs3mMvd7uNl8MaCKH94wg96dOzgGqathOSngMA3eW2ZYii3%2BnRgjDw2dnXBjqkAQ1nBHnAdYkot8CuCHlMUL%2FMOjAK%2FpkAXYofb2jYPMd1qAocobW02lf9dGXir8X5qbYEWCy85iFY9h6NAIKC6wpqUqRN%2Fvj0jKdEZZpQN6cMVB%2Foibo38E4TmS4wq6IL%2BTvrY02bGvQEwYZptukRSIKlAv%2FQ9sVXRHG6QHYXB%2FFCiOdOkXkKTwUq%2FjggyNropGs0VoyOWgWTDHW5FRcJ4r9mQo%2FR&X-Amz-Signature=1c218351d9d3e70a2440176e8b24f0a2532586f797924bb75cd2dc42bc8a3fa1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/e35d8cac-3561-816d-809b-0003d4500ad1/f44884e0-36bd-4813-9af5-659873c39ae0/Win2025.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46632WIZ7CF%2F20261113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261113T042320Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCQmDeJiX%2FeBUSwSL9cxoGI6AsvP84m%2BhkPbwQlAXGYjgIgJz0GnKd24XlvjXm2RoIfO9QW3WPxkleNw6U9M%2FkuetAq%2FwMIehAAGgw2Mzc0MjMxODM4MDUiDGkRYCZWFHMJ1myl2ircAzulne97XcrRMxxA4qSd1NVW0xQoQ6FOKt%2Bg35oNgKqaXfR%2FApzMcZK1zQ6KCqwh5lItVBcbEaaYuGYf1gi1gNdXuZa4ox0cO%2FoMDalR1uMUBmDyF1ZoPzKc90Ze3UGuA9E4%2F9%2Fh2tNMmom%2FeDiMuzH0Uc7sBwmigjX22hAqQt1slCtQSWnqC1nvlkwfPoETwHl5cMyh7zJCcmjC7puIKMH2coXyU2ufNLFCnuiJNp8%2BuUgfQ9hUKmDzhJ1yzejVIIm9KWM8BQTAC7JVLYJw%2FalPrp759AuZOEA%2FwryYbE8N0GxvcTLbPRT3oO6TAyD5GU5Dkm2pc3HpKj3I%2B1%2F3Aq0SwOyJbfEKhc700hdtlUPjpBElhmD71ELJFN5FUnXWdbY%2FqSxaXpIC6KubVYPuZnGs%2B7hCchDA7fABfbKWl4OA59ZlDsektaeFprjDSfCzJeHi0sdFy%2BCXB03IrKWA0nCyRc9J2SBt4DgLu%2B5hHr3FGIkPG60kaMQp3W9psUtPkctHpZaPCr8LOLRyaBRSOBGVfUXROiQjOYYfM30PBoenDu9Rx4Hd%2Bcn9YKCm9JeFhUZ406mfs3U8Rd3h8Wh7KXLDk5rFIl%2BifciZeK91MRimWOjDTeOLxoC1O3OKMJrY2dcGOqUB2IWsfF8A%2B%2FFdjHIoAZMQmEniTy0QwtYDpcC2fgJ5ntc6eocimqogD7G7Gb0NuVzNU7miqW2VtM0czLK6dbBHvRuGvNKy50zogpVuumYOzPkmKOLC4Ii6SuOaF8wrDivTw7%2FMg2F3pPxLsh%2BNWjMrZPhyRhoCrdxkH8QyHIjPesKX7rxrV10S%2BNlqy8bjt%2BoeR7LyHSAp6QcGQiC5eCzlDTqk1F2u&X-Amz-Signature=1fe38aac56de441696757ce21ffd240751e04ca17c83d65735bf7e4fa70ca9c1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
     "localCoverImage": "/static/media/configure-active-directory-in-windows-server-2025/cover.png",
     "lastEditedTime": "2026-11-12T16:30:00.000Z"
   }

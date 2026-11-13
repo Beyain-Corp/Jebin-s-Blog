@@ -1,4 +1,62 @@
 {
+  "417d8cac-3561-80ff-a34f-d175d9513460": [
+    {
+      "object": "block",
+      "id": "417d8cac-3561-807b-8d14-fac86885b5df",
+      "parent": {
+        "type": "page_id",
+        "page_id": "417d8cac-3561-80ff-a34f-d175d9513460"
+      },
+      "created_time": "2026-11-13T04:10:00.000Z",
+      "last_edited_time": "2026-11-13T04:10:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
+  "securing-endpoints-configure-policies-in-manageengine-device-control-plus": [
+    {
+      "object": "block",
+      "id": "417d8cac-3561-807b-8d14-fac86885b5df",
+      "parent": {
+        "type": "page_id",
+        "page_id": "417d8cac-3561-80ff-a34f-d175d9513460"
+      },
+      "created_time": "2026-11-13T04:10:00.000Z",
+      "last_edited_time": "2026-11-13T04:10:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    }
+  ],
   "416d8cac-3561-80e9-ae0b-cf79bc0d9ebc": [
     {
       "object": "block",
