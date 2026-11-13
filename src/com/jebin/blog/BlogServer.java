@@ -45,9 +45,11 @@ public class BlogServer {
         // Routes
         server.createContext("/", new RootHandler());
         server.createContext("/post", new PostPageHandler());
+        server.createContext("/post.html", new PostPageHandler());
         server.createContext("/api/posts", new ApiPostsHandler());
         server.createContext("/api/sync", new ApiSyncHandler());
         server.createContext("/static/", new StaticFileHandler());
+        server.createContext("/data/", new StaticFileHandler());
 
         server.start();
 
@@ -177,14 +179,18 @@ public class BlogServer {
     static class StaticFileHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
-            String pathStr = exchange.getRequestURI().getPath();
-            if (pathStr.startsWith("/static/")) {
-                pathStr = pathStr.substring("/static/".length());
-            } else if (pathStr.startsWith("/")) {
-                pathStr = pathStr.substring(1);
+            String rawPath = exchange.getRequestURI().getPath();
+            String pathStr = rawPath.startsWith("/") ? rawPath.substring(1) : rawPath;
+
+            Path file = Paths.get(pathStr);
+            if (!Files.exists(file) || Files.isDirectory(file)) {
+                if (pathStr.startsWith("static/")) {
+                    file = Paths.get(pathStr);
+                } else {
+                    file = Paths.get("static", pathStr);
+                }
             }
 
-            Path file = Paths.get("static", pathStr);
             if (Files.exists(file) && !Files.isDirectory(file)) {
                 serveFile(exchange, file, getMimeType(file.toString()));
             } else {

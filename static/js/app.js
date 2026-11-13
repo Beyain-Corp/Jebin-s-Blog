@@ -9,18 +9,33 @@ document.addEventListener('DOMContentLoaded', () => {
   const resultsCount = document.getElementById('resultsCount');
   const syncBtn = document.getElementById('syncBtn');
 
-  // Fetch posts from Java backend
+  function resolveImage(url) {
+    if (!url) return '';
+    if (url.startsWith('/static/')) return url.substring(1);
+    if (url.startsWith('/')) return url.substring(1);
+    return url;
+  }
+
+  // Fetch posts from Java backend or static data cache (GitHub Pages)
   async function loadPosts() {
     try {
-      const res = await fetch('/api/posts');
-      allPosts = await res.json();
+      try {
+        const res = await fetch('/api/posts');
+        if (!res.ok) throw new Error('API unavailable');
+        allPosts = await res.json();
+      } catch (apiErr) {
+        // Fallback for static hosting (GitHub Pages)
+        const staticRes = await fetch('data/posts.json');
+        if (!staticRes.ok) throw new Error('Could not load data/posts.json');
+        allPosts = await staticRes.json();
+      }
       renderCategories();
       filterAndRender();
     } catch (err) {
       console.error('Failed to load posts:', err);
       postsGrid.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: var(--text-dim);">
-          <p>Failed to connect to backend server. Make sure Java BlogServer is running.</p>
+          <p>Failed to load engineering guides. Please check connection.</p>
         </div>
       `;
     }
@@ -94,15 +109,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     postsGrid.innerHTML = filtered.map(post => {
-      const img = post.localCoverImage || post.coverImage || '';
+      const rawImg = post.localCoverImage || post.coverImage || '';
+      const img = resolveImage(rawImg);
       const cat = post.category ? post.category.name : '';
       const tagsHtml = (post.tags || []).slice(0, 3).map(t => `<span class="tag-badge">#${escapeHtml(t.name)}</span>`).join('');
       const dateFormatted = post.date ? formatDate(post.date) : '';
+      const postUrl = `post.html?slug=${encodeURIComponent(post.slug)}`;
 
       return `
         <article class="card">
           <div class="card-image-wrap">
-            <a href="/post?slug=${encodeURIComponent(post.slug)}">
+            <a href="${postUrl}">
               ${img ? `<img src="${img}" alt="${escapeHtml(post.title)}" class="card-image" loading="lazy">` : `<div style="height:100%;display:flex;align-items:center;justify-content:center;background:#1e2433;color:#64748b;">No Image</div>`}
             </a>
             ${cat ? `<span class="card-cat">${escapeHtml(cat)}</span>` : ''}
@@ -113,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <span>⏱ ${escapeHtml(post.readTime || '5 Minutes')}</span>
             </div>
             <h2 class="card-title">
-              <a href="/post?slug=${encodeURIComponent(post.slug)}">${escapeHtml(post.title)}</a>
+              <a href="${postUrl}">${escapeHtml(post.title)}</a>
             </h2>
             <p class="card-summary">${escapeHtml(post.summary || '')}</p>
             <div class="card-tags">
@@ -121,10 +138,10 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="card-footer">
               <div class="card-author-mini">
-                <img src="/static/img/jebin.jpg" alt="J Jebin Joseph">
+                <img src="static/img/jebin.jpg" alt="J Jebin Joseph">
                 <span>J Jebin Joseph</span>
               </div>
-              <a href="/post?slug=${encodeURIComponent(post.slug)}" class="read-link">
+              <a href="${postUrl}" class="read-link">
                 Read Guide →
               </a>
             </div>

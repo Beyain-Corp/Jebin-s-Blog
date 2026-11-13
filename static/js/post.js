@@ -5,23 +5,56 @@ document.addEventListener('DOMContentLoaded', async () => {
   const postContainer = document.getElementById('postContainer');
   const headings = [];
 
+  function resolveImage(url) {
+    if (!url) return '';
+    if (url.startsWith('/static/')) return url.substring(1);
+    if (url.startsWith('/')) return url.substring(1);
+    return url;
+  }
+
   if (!slug) {
     postContainer.innerHTML = `
       <div style="text-align: center; padding: 5rem 0;">
         <h2>No guide selected</h2>
         <p style="color: var(--text-dim); margin: 1rem 0 2rem;">Please select an article from the homepage.</p>
-        <a href="/" class="btn-sync" style="display:inline-block;">← Back to Home</a>
+        <a href="index.html" class="btn-sync" style="display:inline-block;">← Back to Home</a>
       </div>
     `;
     return;
   }
 
   try {
-    const res = await fetch(`/api/posts?slug=${encodeURIComponent(slug)}`);
-    if (!res.ok) throw new Error('Post not found');
-    const data = await res.json();
-    const post = data.post;
-    const blocks = data.blocks || [];
+    let post = null;
+    let blocks = [];
+
+    // Try Java backend API first; fallback to static data files for GitHub Pages
+    try {
+      const res = await fetch(`/api/posts?slug=${encodeURIComponent(slug)}`);
+      if (res.ok) {
+        const data = await res.json();
+        post = data.post;
+        blocks = data.blocks || [];
+      } else {
+        throw new Error('API unavailable');
+      }
+    } catch (apiErr) {
+      // Fallback: static JSON files on GitHub Pages
+      const postsRes = await fetch('data/posts.json');
+      const allPosts = await postsRes.json();
+      post = allPosts.find(p => p.slug === slug || p.id === slug);
+
+      if (post) {
+        try {
+          const blocksRes = await fetch('data/blocks.json');
+          const allBlocks = await blocksRes.json();
+          blocks = allBlocks[slug] || allBlocks[post.id] || [];
+        } catch (bErr) {
+          console.warn('Could not load blocks cache:', bErr);
+        }
+      }
+    }
+
+    if (!post) throw new Error('Post not found');
 
     document.title = `${post.title} | J Jebin Joseph`;
 
@@ -34,13 +67,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       <div style="text-align: center; padding: 5rem 0;">
         <h2>Guide Not Found</h2>
         <p style="color: var(--text-dim); margin: 1rem 0 2rem;">The requested article could not be loaded from Notion.</p>
-        <a href="/" class="btn-sync" style="display:inline-block;">← Back to All Guides</a>
+        <a href="index.html" class="btn-sync" style="display:inline-block;">← Back to All Guides</a>
       </div>
     `;
   }
 
   function renderPost(post, blocks) {
-    const img = post.localCoverImage || post.coverImage || '';
+    const rawImg = post.localCoverImage || post.coverImage || '';
+    const img = resolveImage(rawImg);
     const cat = post.category ? post.category.name : '';
     const tagsHtml = (post.tags || []).map(t => `<span class="tag-badge">#${escapeHtml(t.name)}</span>`).join('');
     const formattedDate = post.date ? new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : '';
@@ -49,7 +83,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     postContainer.innerHTML = `
       <nav class="breadcrumb">
-        <a href="/">Home</a>
+        <a href="index.html">Home</a>
         <span>/</span>
         ${cat ? `<span>${escapeHtml(cat)}</span><span>/</span>` : ''}
         <span style="color: var(--text-main);">${escapeHtml(post.title)}</span>
@@ -61,7 +95,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         <div class="post-meta-bar">
           <div class="author-pill">
-            <img src="/static/img/jebin.jpg" alt="J Jebin Joseph" class="author-avatar">
+            <img src="static/img/jebin.jpg" alt="J Jebin Joseph" class="author-avatar">
             <span>J Jebin Joseph</span>
             <span style="color:var(--text-dim); font-size:0.75rem; font-weight:normal;">• IT Infrastructure Lead</span>
           </div>
@@ -99,7 +133,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
           <div class="author-card">
             <div style="display:flex; align-items:center; gap:0.85rem; margin-bottom:0.85rem;">
-              <img src="/static/img/jebin.jpg" alt="J Jebin Joseph" class="author-card-avatar">
+              <img src="static/img/jebin.jpg" alt="J Jebin Joseph" class="author-card-avatar">
               <div>
                 <strong style="color:#fff; font-size:1rem; display:block;">J Jebin Joseph</strong>
                 <p style="font-size:0.75rem; color:var(--cyan); font-weight:500;">IT Infrastructure Lead</p>

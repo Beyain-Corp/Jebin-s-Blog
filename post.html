@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Guide | J Jebin Joseph</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/post.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+  <script>
+    (function () {
+      const t = localStorage.getItem('jebin-theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" style="display:flex; align-items:center; gap:0.85rem;">
+          <img src="static/img/jebin.jpg" alt="J Jebin Joseph" class="brand-avatar">
+          <div class="brand-text">
+            <h1>J Jebin Joseph</h1>
+            <div class="brand-role">IT Infrastructure Lead</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="nav-actions" style="display:flex; align-items:center; gap:0.75rem;">
+        <a href="index.html" class="btn-sync">
+          ← All Playbooks
+        </a>
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme" title="Switch Theme (Dark / Light)">
+          <i class="fa-solid fa-sun" id="themeIcon"></i>
+        </button>
+        <a href="https://wa.me/919043437743" target="_blank" rel="noopener" class="btn-contact">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Container -->
+  <main class="container post-container" id="postContainer">
+    <div style="text-align: center; padding: 6rem 0; color: var(--text-dim);">
+      <p style="font-size: 1.1rem; font-family: var(--font-mono);">⚡ Loading guide from Notion...</p>
+    </div>
+  </main>
+
+  <!-- Portfolio Style Footer -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 0.75rem;">
+            <div class="logo-badge">JJ</div>
+            <div class="brand-text">
+              <span class="brand-name">Jebin Joseph J.</span>
+              <span class="brand-sub">B.E. (E.C.E.)</span>
+            </div>
+          </div>
+          <p class="footer-quote">
+            “Learn • Innovate • Lead” — Building Reliable, Secure and Scalable IT Infrastructure.
+          </p>
+        </div>
+
+        <div class="footer-nav-wrapper">
+          <ul class="footer-nav-links">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="https://beyain-corp.github.io/Jebin_Portfolio/#about" target="_blank" rel="noopener" class="footer-nav-link">About</a></li>
+            <li><a href="https://beyain-corp.github.io/Jebin_Portfolio/#architecture" target="_blank" rel="noopener" class="footer-nav-link">Architecture</a></li>
+            <li><a href="https://beyain-corp.github.io/Jebin_Portfolio/#experience" target="_blank" rel="noopener" class="footer-nav-link">Experience</a></li>
+            <li><a href="https://beyain-corp.github.io/Jebin_Portfolio/#skills" target="_blank" rel="noopener" class="footer-nav-link">Arsenal</a></li>
+            <li><a href="index.html#playbooks" class="footer-nav-link">Articles</a></li>
+            <li><a href="https://beyain-corp.github.io/Jebin_Portfolio/#terminal" target="_blank" rel="noopener" class="footer-nav-link">Console</a></li>
+            <li><a href="index.html#contact" class="footer-nav-link">Contact</a></li>
+          </ul>
+
+          <ul class="footer-nav-links footer-social-links">
+            <li><a href="https://www.linkedin.com/in/jebinjosephj" target="_blank" rel="noopener noreferrer"
+                class="footer-nav-link brand-linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/Beyain-Corp" target="_blank" rel="noopener noreferrer"
+                class="footer-nav-link brand-github"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.instagram.com/jebin_j_joseph/" target="_blank" rel="noopener noreferrer"
+                class="footer-nav-link brand-instagram"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Jebin Joseph J. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+          <span>Enterprise IT Infrastructure Portfolio</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="static/js/theme.js"></script>
+  <script src="static/js/post.js"></script>
+</body>
+</html>
