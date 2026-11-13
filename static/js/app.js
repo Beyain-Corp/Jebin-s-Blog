@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Fetch posts from Java backend or static data cache (GitHub Pages)
-  async function loadPosts() {
+  async function loadPosts(forceRefresh = false) {
     try {
       try {
         const res = await fetch('/api/posts');
@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         allPosts = await res.json();
       } catch (apiErr) {
         // Fallback for static hosting (GitHub Pages)
-        const staticRes = await fetch('data/posts.json');
+        const cacheBuster = forceRefresh ? `?t=${Date.now()}` : '';
+        const staticRes = await fetch(`data/posts.json${cacheBuster}`);
         if (!staticRes.ok) throw new Error('Could not load data/posts.json');
         allPosts = await staticRes.json();
       }
@@ -163,30 +164,51 @@ document.addEventListener('DOMContentLoaded', () => {
   if (syncBtn) {
     syncBtn.addEventListener('click', async () => {
       syncBtn.disabled = true;
-      syncBtn.innerHTML = `⏳ Syncing Notion...`;
-      try {
-        const res = await fetch('/api/sync', { method: 'POST' });
-        const data = await res.json();
-        if (data.success) {
-          syncBtn.innerHTML = `✓ Synced!`;
+      const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
+      if (isLocalhost) {
+        syncBtn.innerHTML = `⏳ Syncing Notion...`;
+        try {
+          const res = await fetch('/api/sync', { method: 'POST' });
+          const data = await res.json();
+          if (data && data.success) {
+            syncBtn.innerHTML = `✓ Synced!`;
+            setTimeout(async () => {
+              await loadPosts(true);
+              syncBtn.disabled = false;
+              syncBtn.innerHTML = `<span class="sync-dot"></span><span>Sync</span>`;
+            }, 1200);
+          } else {
+            syncBtn.innerHTML = `Sync failed`;
+            setTimeout(() => {
+              syncBtn.disabled = false;
+              syncBtn.innerHTML = `<span class="sync-dot"></span><span>Sync</span>`;
+            }, 3000);
+          }
+        } catch (e) {
+          syncBtn.innerHTML = `Error`;
           setTimeout(() => {
             syncBtn.disabled = false;
-            syncBtn.innerHTML = `<span class="sync-dot"></span> Sync Notion`;
-            loadPosts();
-          }, 1000);
-        } else {
-          syncBtn.innerHTML = `Sync failed`;
-          setTimeout(() => {
-            syncBtn.disabled = false;
-            syncBtn.innerHTML = `<span class="sync-dot"></span> Sync Notion`;
+            syncBtn.innerHTML = `<span class="sync-dot"></span><span>Sync</span>`;
           }, 3000);
         }
-      } catch (e) {
-        syncBtn.innerHTML = `Error`;
-        setTimeout(() => {
-          syncBtn.disabled = false;
-          syncBtn.innerHTML = `<span class="sync-dot"></span> Sync Notion`;
-        }, 3000);
+      } else {
+        // GitHub Pages / Static Hosting Mode
+        syncBtn.innerHTML = `⏳ Checking Notion...`;
+        try {
+          await loadPosts(true);
+          syncBtn.innerHTML = `✓ Up to date!`;
+          setTimeout(() => {
+            syncBtn.disabled = false;
+            syncBtn.innerHTML = `<span class="sync-dot"></span><span>Sync</span>`;
+          }, 2000);
+        } catch (e) {
+          syncBtn.innerHTML = `✓ Up to date!`;
+          setTimeout(() => {
+            syncBtn.disabled = false;
+            syncBtn.innerHTML = `<span class="sync-dot"></span><span>Sync</span>`;
+          }, 2000);
+        }
       }
     });
   }

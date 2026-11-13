@@ -81,21 +81,39 @@ function downloadFile(url, destPath) {
     }
 
     const file = fs.createWriteStream(destPath);
-    client.get(url, (response) => {
+    const req = client.get(url, (response) => {
       if (response.statusCode >= 300 && response.statusCode < 400 && response.headers.location) {
-        return downloadFile(response.headers.location, destPath).then(resolve).catch(reject);
+        file.close(() => {
+          downloadFile(response.headers.location, destPath).then(resolve).catch(reject);
+        });
+        return;
       }
       if (response.statusCode !== 200) {
-        return reject(new Error(`Download failed with status ${response.statusCode}`));
+        file.close(() => {
+          fs.unlink(destPath, () => {});
+          reject(new Error(`Download failed with status ${response.statusCode}`));
+        });
+        return;
       }
       response.pipe(file);
       file.on('finish', () => {
-        file.close();
-        resolve(destPath);
+        file.close(() => resolve(destPath));
       });
-    }).on('error', (err) => {
-      fs.unlink(destPath, () => {});
-      reject(err);
+    });
+
+    req.on('error', (err) => {
+      file.close(() => {
+        fs.unlink(destPath, () => {});
+        reject(err);
+      });
+    });
+
+    req.setTimeout(15000, () => {
+      req.destroy();
+      file.close(() => {
+        fs.unlink(destPath, () => {});
+        reject(new Error('Download timed out'));
+      });
     });
   });
 }
@@ -144,7 +162,8 @@ async function sync() {
 
   const posts = [];
   const blocksCache = {};
-  const mediaDir = path.join(ROOT_DIR, 'public', 'media');
+  const staticMediaDir = path.join(ROOT_DIR, 'static', 'media');
+  const publicMediaDir = path.join(ROOT_DIR, 'public', 'media');
 
   for (const page of pages) {
     const props = page.properties;
@@ -175,13 +194,19 @@ async function sync() {
       originalCoverUrl = coverFiles[0].file?.url || coverFiles[0].external?.url;
       const fileName = coverFiles[0].name || 'cover.png';
       const ext = path.extname(fileName) || '.png';
-      const destPath = path.join(mediaDir, slug, `cover${ext}`);
-      const publicPath = `/media/${slug}/cover${ext}`;
+      const staticDest = path.join(staticMediaDir, slug, `cover${ext}`);
+      const publicDest = path.join(publicMediaDir, slug, `cover${ext}`);
+      const publicPath = `/static/media/${slug}/cover${ext}`;
 
       try {
         if (originalCoverUrl) {
           console.log(`  Downloading cover image for "${title}" -> ${publicPath}`);
-          await downloadFile(originalCoverUrl, destPath);
+          await downloadFile(originalCoverUrl, staticDest);
+          try {
+            const pubDir = path.dirname(publicDest);
+            if (!fs.existsSync(pubDir)) fs.mkdirSync(pubDir, { recursive: true });
+            fs.copyFileSync(staticDest, publicDest);
+          } catch (_) {}
           localCoverImage = publicPath;
         }
       } catch (e) {
@@ -217,10 +242,16 @@ async function sync() {
           const imgUrl = block.image?.file?.url || block.image?.external?.url;
           if (imgUrl && block.image?.type === 'file') {
             const ext = '.png';
-            const imgDest = path.join(mediaDir, slug, `block-${block.id}${ext}`);
-            const imgPublic = `/media/${slug}/block-${block.id}${ext}`;
+            const staticImgDest = path.join(staticMediaDir, slug, `block-${block.id}${ext}`);
+            const publicImgDest = path.join(publicMediaDir, slug, `block-${block.id}${ext}`);
+            const imgPublic = `/static/media/${slug}/block-${block.id}${ext}`;
             try {
-              await downloadFile(imgUrl, imgDest);
+              await downloadFile(imgUrl, staticImgDest);
+              try {
+                const pubDir = path.dirname(publicImgDest);
+                if (!fs.existsSync(pubDir)) fs.mkdirSync(pubDir, { recursive: true });
+                fs.copyFileSync(staticImgDest, publicImgDest);
+              } catch (_) {}
               block.image.localUrl = imgPublic;
             } catch (err) {
               console.error(`  Warning: failed to download block image: ${err.message}`);
@@ -248,7 +279,16 @@ async function sync() {
   fs.writeFileSync(path.join(dataDir, 'posts-cache.json'), JSON.stringify(posts, null, 2), 'utf-8');
   fs.writeFileSync(path.join(dataDir, 'blocks-cache.json'), JSON.stringify(blocksCache, null, 2), 'utf-8');
 
-  console.log(`\n🎉 Successfully synced ${posts.length} posts and cached to src/data/!`);
+  // Save to root data/ for static hosting & Java backend
+  const rootDataDir = path.join(ROOT_DIR, 'data');
+  if (!fs.existsSync(rootDataDir)) {
+    fs.mkdirSync(rootDataDir, { recursive: true });
+  }
+
+  fs.writeFileSync(path.join(rootDataDir, 'posts.json'), JSON.stringify(posts, null, 2), 'utf-8');
+  fs.writeFileSync(path.join(rootDataDir, 'blocks.json'), JSON.stringify(blocksCache, null, 2), 'utf-8');
+
+  console.log(`\n🎉 Successfully synced ${posts.length} posts and cached to data/ & src/data/!`);
   posts.forEach(p => console.log(`  - [${p.published ? 'Published' : 'Draft'}] ${p.title} (${p.category?.name || 'Uncategorized'})`));
 }
 
