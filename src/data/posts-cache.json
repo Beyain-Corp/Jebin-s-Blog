@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "id": "418ae0c3-06ff-802a-9939-d97f79a6704c",
+    "title": "Configure a Gmail Account in Outlook for Windows",
+    "slug": "configure-a-gmail-account-in-outlook-for-windows",
+    "summary": "Combining the power of Gmail with Microsoft Outlook for Windows lets you manage all of your emails, calendars, and tasks in one unified, feature-rich workspace. Whether you are using the traditional Classic Outlook or the updated New Outlook on Windows, setting up your Gmail takes only a few minutes.",
+    "category": {
+      "name": "Integration",
+      "color": "yellow"
+    },
+    "tags": [
+      {
+        "name": "Gmail",
+        "color": "default"
+      },
+      {
+        "name": "Outlook",
+        "color": "brown"
+      },
+      {
+        "name": "Windows",
+        "color": "green"
+      },
+      {
+        "name": "MacOS",
+        "color": "gray"
+      },
+      {
+        "name": "IMAP",
+        "color": "brown"
+      },
+      {
+        "name": "EMail",
+        "color": "brown"
+      },
+      {
+        "name": "Sync",
+        "color": "gray"
+      },
+      {
+        "name": "Configuration",
+        "color": "brown"
+      }
+    ],
+    "readTime": "4 Minutes",
+    "date": "2026-11-13",
+    "published": true,
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/695ebcbd-9fc0-4541-ac4d-dc003cbd60ae/0543f129-e0c4-4dae-93d5-85a70fa05ced/gmail-outlook.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TCIDO7D6%2F20261114%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261114T160704Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCICtxKsEbIenROXVax1lhuQIzAMsOl6peJ%2BgZ8ODy1kflAiATvXrogszva%2FM660JFJvx8qlJO4as4Py86QhLX3NNaniqIBAig%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMSUMfsIMfQACVW2LzKtwD0luk6Dp9z5qAxcvT3ozTaF38%2Bi3ErYSrMVXWOBI5%2BWE1v8l86Smp%2BDk2FotcxC8kU9GRrr%2FX%2FXsq%2FyI%2FYxXhWL3U4jp0cDVBWYHWTReW85ul7nZ3Ix8QuJzbbXiM7C1OXYDII4nHWNczv113vlKQqyUQT2cu0r7Pp8dTWhd6tBCgPcwfMG5FxMkT2tZWQBlRbWqQrGyDGkRWqd3udAzBnmTkh6lX37D8tUUk%2BMELjbTlaQuweuE2qZHrcQpWaDRQZla5joVKUefJGR9Kh7vDVtRx4%2FHs8dxIfE8ygDToB7gQDjRoyKRpQ8T6CtylGormX91VexbqAnVQbB81%2FQa%2B4idlKiiM%2BrHwpp%2BZ%2Fst7XJVJ7upxgOxmlKHGG6%2Bh91icBf9SLSxUHX5VvMSKOD2SItjXHxJ4qAfWPb8iZuM0hKPW5TYJ4b2jpLx5lH%2ByUpimm3WwH%2FF0Li1ECg6fN5Aa9latiSzXqU2T39ueMITxJvC2GCCgdAL%2FuKtcA2xH8%2F6jF850ZrHwp2%2F063CcxOHnfTpTTnicFv0nPPIJYNyAoW7kdR9ru7BufkceNjChrnD1BhRt%2FWM%2FFDVf4a69BwJ2vXYdfB5bS3%2Feeu%2BdKfcFq5hcCKc%2FUOJxbFn040gwq%2Frh1wY6pgE3%2FlQXxm5dXAndWhiE%2BxlXizAqASMERR4EgUqwYoD5rX%2Fq9UqueYiJUk3gTH7C9jthorhKtQMiIC1C6%2BgL6n1DSIXOp1xvKOlMuRPJvmtc04oKj2ALwMcb8Vx6twnkf8CI2NkygpDSEj4oH6VjGtlEVg0kfyCrb%2F25qbPscS7D%2FEGS9G1O8Cx%2BLuQl2%2F1ffxQCUJWaXmS2uqFWpqW9mx1lGKA8XOEP&X-Amz-Signature=f1804618d3bc05c5139f6b110016d53422c2d207f17cdc4d1a76eb68cb53bab3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "localCoverImage": "/static/media/configure-a-gmail-account-in-outlook-for-windows/cover.png",
+    "lastEditedTime": "2026-11-14T16:06:00.000Z"
+  },
+  {
+    "id": "418ae0c3-06ff-8023-a154-f6771836b3b1",
+    "title": "Configure Active Directory in Windows Server 2025",
+    "slug": "configure-active-directory-in-windows-server-2025",
+    "summary": "Active Directory Domain Services (AD DS) is the central authority for identity, authentication, and security policies in a Windows environment. In Windows Server 2025, establishing a Domain Controller remains a strict two-phase process: first, installing the AD DS server role, and second, promoting the server to act as a Domain Controller. ",
+    "category": {
+      "name": "Active Directory",
+      "color": "brown"
+    },
+    "tags": [
+      {
+        "name": "Active Directory",
+        "color": "orange"
+      },
+      {
+        "name": "Windows Server",
+        "color": "purple"
+      },
+      {
+        "name": "ADDS",
+        "color": "yellow"
+      },
+      {
+        "name": "Domain",
+        "color": "pink"
+      },
+      {
+        "name": "Domain Controller",
+        "color": "green"
+      },
+      {
+        "name": "FSMO",
+        "color": "blue"
+      },
+      {
+        "name": "Implementation",
+        "color": "red"
+      }
+    ],
+    "readTime": "5 Minutes",
+    "date": "2026-11-12",
+    "published": true,
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/695ebcbd-9fc0-4541-ac4d-dc003cbd60ae/dffbeadf-d7af-4aa7-87f9-a9c2ab6153a9/Win2025.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TCIDO7D6%2F20261114%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261114T160704Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCICtxKsEbIenROXVax1lhuQIzAMsOl6peJ%2BgZ8ODy1kflAiATvXrogszva%2FM660JFJvx8qlJO4as4Py86QhLX3NNaniqIBAig%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMSUMfsIMfQACVW2LzKtwD0luk6Dp9z5qAxcvT3ozTaF38%2Bi3ErYSrMVXWOBI5%2BWE1v8l86Smp%2BDk2FotcxC8kU9GRrr%2FX%2FXsq%2FyI%2FYxXhWL3U4jp0cDVBWYHWTReW85ul7nZ3Ix8QuJzbbXiM7C1OXYDII4nHWNczv113vlKQqyUQT2cu0r7Pp8dTWhd6tBCgPcwfMG5FxMkT2tZWQBlRbWqQrGyDGkRWqd3udAzBnmTkh6lX37D8tUUk%2BMELjbTlaQuweuE2qZHrcQpWaDRQZla5joVKUefJGR9Kh7vDVtRx4%2FHs8dxIfE8ygDToB7gQDjRoyKRpQ8T6CtylGormX91VexbqAnVQbB81%2FQa%2B4idlKiiM%2BrHwpp%2BZ%2Fst7XJVJ7upxgOxmlKHGG6%2Bh91icBf9SLSxUHX5VvMSKOD2SItjXHxJ4qAfWPb8iZuM0hKPW5TYJ4b2jpLx5lH%2ByUpimm3WwH%2FF0Li1ECg6fN5Aa9latiSzXqU2T39ueMITxJvC2GCCgdAL%2FuKtcA2xH8%2F6jF850ZrHwp2%2F063CcxOHnfTpTTnicFv0nPPIJYNyAoW7kdR9ru7BufkceNjChrnD1BhRt%2FWM%2FFDVf4a69BwJ2vXYdfB5bS3%2Feeu%2BdKfcFq5hcCKc%2FUOJxbFn040gwq%2Frh1wY6pgE3%2FlQXxm5dXAndWhiE%2BxlXizAqASMERR4EgUqwYoD5rX%2Fq9UqueYiJUk3gTH7C9jthorhKtQMiIC1C6%2BgL6n1DSIXOp1xvKOlMuRPJvmtc04oKj2ALwMcb8Vx6twnkf8CI2NkygpDSEj4oH6VjGtlEVg0kfyCrb%2F25qbPscS7D%2FEGS9G1O8Cx%2BLuQl2%2F1ffxQCUJWaXmS2uqFWpqW9mx1lGKA8XOEP&X-Amz-Signature=477142dcaddc259c6cb001be6619ec20cee3ba2b135f96d80b432e3fdff853f4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "localCoverImage": "/static/media/configure-active-directory-in-windows-server-2025/cover.png",
+    "lastEditedTime": "2026-11-14T16:06:00.000Z"
+  }
+]
