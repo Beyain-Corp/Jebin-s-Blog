@@ -55,7 +55,11 @@ git add data/ static/media/ src/data/ public/media/
 git commit -m "chore(notion): auto-sync published articles [skip ci]"
 
 echo "Pushing updates to GitHub..."
-git push origin main
+if [ -n "$GH_TOKEN" ]; then
+  git push "https://${GH_USER:-Beyain-Corp}:${GH_TOKEN}@github.com/Beyain-Corp/Jebin-s-Blog.git" main
+else
+  git push origin main
+fi
 
 echo "=========================================="
 echo "✓ Sync successfully pushed to GitHub!"
