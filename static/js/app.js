@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (filtered.length === 0) {
       postsGrid.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 1rem; color: var(--text-dim); background: var(--bg-card); border-radius: 16px; border: 1px dashed var(--border);">
-          <h3 style="color: #fff; margin-bottom: 0.5rem;">No matching guides found</h3>
+          <h3 style="color: var(--text-main); margin-bottom: 0.5rem;">No matching guides found</h3>
           <p style="font-size: 0.9rem;">Try adjusting your search terms or category selection.</p>
         </div>
       `;

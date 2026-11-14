@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <div style="display:flex; align-items:center; gap:0.85rem; margin-bottom:0.85rem;">
               <img src="static/img/jebin.jpg" alt="J Jebin Joseph" class="author-card-avatar">
               <div>
-                <strong style="color:#fff; font-size:1rem; display:block;">J Jebin Joseph</strong>
+                <strong style="color:var(--text-main); font-size:1rem; display:block;">J Jebin Joseph</strong>
                 <p style="font-size:0.75rem; color:var(--cyan); font-weight:500;">IT Infrastructure Lead</p>
                 <p style="font-size:0.7rem; color:var(--text-dim);">Orchid Pharma Ltd</p>
               </div>
@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           const raw = plainText(data.rich_text);
           const id = slugify(raw);
           headings.push({ id, text: raw, level: 3 });
-          html += `<h4 id="${id}" style="margin:1.75rem 0 0.5rem; color:#fff; font-size:1.15rem;">${txt}</h4>`;
+          html += `<h4 id="${id}" style="margin:1.75rem 0 0.5rem; color:var(--text-main); font-size:1.15rem;">${txt}</h4>`;
           break;
         }
         case 'paragraph': {
