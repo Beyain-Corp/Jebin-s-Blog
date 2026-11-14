@@ -24,9 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!res.ok) throw new Error('API unavailable');
         allPosts = await res.json();
       } catch (apiErr) {
-        // Fallback for static hosting (GitHub Pages)
-        const cacheBuster = forceRefresh ? `?t=${Date.now()}` : '';
-        const staticRes = await fetch(`data/posts.json${cacheBuster}`);
+        // Fallback for static hosting (GitHub Pages) - always fetch fresh
+        const staticRes = await fetch(`data/posts.json?t=${Date.now()}`, { cache: 'no-cache' });
         if (!staticRes.ok) throw new Error('Could not load data/posts.json');
         allPosts = await staticRes.json();
       }

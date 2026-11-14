@@ -65,7 +65,7 @@ pipeline {
                         # Check if any changes were staged
                         if ! git diff --staged --quiet; then
                             echo "[INFO] New Notion articles or updates detected. Committing..."
-                            git commit -m "chore(notion): auto-sync published articles [skip ci]"
+                            git commit -m "chore(notion): auto-sync published articles"
 
                             echo "[INFO] Pushing to GitHub main branch..."
                             git push https://x-access-token:${GH_TOKEN}@github.com/Beyain-Corp/Jebin-s-Blog.git HEAD:main

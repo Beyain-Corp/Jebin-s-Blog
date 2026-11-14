@@ -39,13 +39,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     } catch (apiErr) {
       // Fallback: static JSON files on GitHub Pages
-      const postsRes = await fetch('data/posts.json');
+      const postsRes = await fetch(`data/posts.json?t=${Date.now()}`, { cache: 'no-cache' });
       const allPosts = await postsRes.json();
       post = allPosts.find(p => p.slug === slug || p.id === slug);
 
       if (post) {
         try {
-          const blocksRes = await fetch('data/blocks.json');
+          const blocksRes = await fetch(`data/blocks.json?t=${Date.now()}`, { cache: 'no-cache' });
           const allBlocks = await blocksRes.json();
           blocks = allBlocks[slug] || allBlocks[post.id] || [];
         } catch (bErr) {

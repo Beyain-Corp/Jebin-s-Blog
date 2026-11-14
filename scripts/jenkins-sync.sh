@@ -52,7 +52,7 @@ fi
 
 # 6. Commit and Push
 git add data/ static/media/ src/data/ public/media/
-git commit -m "chore(notion): auto-sync published articles [skip ci]"
+git commit -m "chore(notion): auto-sync published articles"
 
 echo "Pushing updates to GitHub..."
 if [ -n "$GH_TOKEN" ]; then
