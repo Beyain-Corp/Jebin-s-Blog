@@ -8,12 +8,41 @@
       "name": "Active Directory",
       "color": "brown"
     },
-    "tags": [],
+    "tags": [
+      {
+        "name": "Active Directory",
+        "color": "orange"
+      },
+      {
+        "name": "Windows Server",
+        "color": "purple"
+      },
+      {
+        "name": "ADDS",
+        "color": "yellow"
+      },
+      {
+        "name": "Domain",
+        "color": "pink"
+      },
+      {
+        "name": "Domain Controller",
+        "color": "green"
+      },
+      {
+        "name": "FSMO",
+        "color": "blue"
+      },
+      {
+        "name": "Implementation",
+        "color": "red"
+      }
+    ],
     "readTime": "5 Minutes",
     "date": "2026-11-12",
     "published": true,
-    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/695ebcbd-9fc0-4541-ac4d-dc003cbd60ae/dffbeadf-d7af-4aa7-87f9-a9c2ab6153a9/Win2025.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QDK5TA6H%2F20261114%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261114T115505Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIDCoC2jJ7Ucg5L3XsaJiQAjofk6QIbCHgMEfLL0tTB2HAiEAr%2B92C3tPX1FaO%2FsJClMrGq132VWQlZAFwB5Bs35Rz9AqiAQImf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDD6kXHjIzC5a3bUQsCrcA0qaYpjD0jnowWFNmJ%2F11wp8BwZ9kChRmRWsm8O1yU3nqbO4JyAVMt99FpJqcK8h1o6Uh%2BgTq2CdIBPPVnINEg152EJ%2F0AJ8YvyjvKKC7QIGhuTljT7VnXvYvXr8RaTYdX57iCbv7ERNbyoiWAJQ3Co3v%2FeJCGFsMBqH2cagcvcVH%2FtpuFnCyrV9gV2Q5dyIY2OmZTlOCiT7qS%2BXUq4Vq7gd6ysqiGaHFwa6ZaXglqs8gKaYrgait2xl0SP5xPtuEQlBde1wViJNinl6qSsEPGjVgRpL8F%2FHvOqYfvdax%2Bp6OoFAvYdTjbtxEUlC65iii2UYfCCz6PPT%2Bgl4KNKkx4QDCe%2FStjuYc7a3velUQ5P%2ByYCwI8fPKB6VeIF3N%2FKAOaiqCqk89BsWxQ%2BvCH5n96%2FBKXLkiqHai0yGNg3A41IDim1UL5fio%2BkoGH4pMUWHX8I5hbdSHQkMS7I4YcC58S68krsbob6rLxHC7Y2VFh7QL%2FlI%2Fz%2FNj0LbqTqRbYT7AhJLh4Ckg7S0c2Qim6FwsPxFX%2FUU%2Bl%2FMvpdjiFSpu4MRq1DV%2BSAQNyZd2dwm%2B%2BLk2Vr5dfiQ9payCqkwn26TFvsxEjABBOp8y4cjAHQiNVZr%2FP9rRp%2F4QaVPxmo6MInC4NcGOqUBAfIr4e6STsn2HLF%2BaP5XeiCVxIk8IMLlyLTH08jbjILtG9N6GSvMcSvgoveWbuWbBiwwr%2BrCvcf33%2BI2SilFYom7LX%2FClNQvWTEc1An5qnKDyqSaQWLPMSqj%2FMo7C1rhi4T3O7UPgg65uJkHkdmDax0XU0hwp3pzxNOCIDjyCvDj58DoS%2Blxg8EASwBe99weCB23VqyU5KX62aDdRjLsikBPc7Ks&X-Amz-Signature=6d2aa6c631a43ac755c0ec06ad988cee4a4859268ea6770191610e5515e8d9f2&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/695ebcbd-9fc0-4541-ac4d-dc003cbd60ae/dffbeadf-d7af-4aa7-87f9-a9c2ab6153a9/Win2025.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WYHA7RMC%2F20261114%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261114T115705Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCICJ05m35NgsHg82tuC0AK8AifTtVqlXqq0s9XEQWoX2OAiA36X74K1jBO14DL2%2F0aey8fHNdi8cDf1WsX4SH9MgoRSqIBAia%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMeVzYQJ%2Bx8%2B0q1c34KtwDyYrPT8g0yV6wGHSeDyG7%2B%2FCwpyWPF7bany1FNqVW%2FjapS8RPJHJjJk0bVPN6QYq8l9WDShahkl%2FDHkCdQSih8mrEUHJm8lxcnpohKHnGwm1groBOKbk80YoYTLagtUWhGAoWXut9Jq4gsPzh9OireR0NwSlVWWBkIOl6WQ5A%2F3i3V0RSHaem%2BDE2lvBhK5YKFPGAUel9TqWQZ9yNGEyieAGnS7%2F2ikg%2Fg8MjxV0vLkVN9dLXesy%2BlKTnRRWagG5u00FQczdWn16v4YTdrTe8m%2FdYGSBm6rQdqk91XlXVJ59%2BLYnFVzFmKiQHQFZ4oMfOx7vNAdJUZ%2BkIL9rewFEvhaTMZCY%2F7JRfcm1KEYOPwSqPVQSqDqyJu2geIwwhC%2Fb5zv%2BzxIK738IaBDb9R399LWSlaSxdWvqfh5PPrf677dqbUfhsJiRbKoDsgleYnPqLZ1nckNms%2BmOe2m%2B5cJ7CACCWg2KtVk6qm%2BbywhMx%2F1migdyiQ9xnaZ8djJw5xqC1MIQYDF%2B2Nfr5OQE9G9x1z1ii3rpL6vSVkRMxxHhsRrSNGcTk1%2BAsSY4xi0VArpU%2Fi8SjE2ztQu2O026ZDY1XwxRWca%2BM0LpwMGPy4fG%2B2LcA7I19COW2f0sDzOwwkcPg1wY6pgH%2BMYro2wY7pXwbU62twCpqwdon%2BVDZbg9Yt7igkgaExyqy5pV9Z23Ya8m2MRO%2Bdib0Gu2Xkb4QbVLDzrJbPdve%2B7xFpdyh%2F2pisNPay4mLyNHFUcNzrCJSZIq4lOpBM7NOciNq3yuKd5hvNdb43W22DBph0qSW3F14QiHbwrfxRcE2ivhNyfje9W84x0ZVfao44MGvxBzN12fX7vPjhoQl26598isZ&X-Amz-Signature=1102a59c28d10b8dca61396428fcf0fc0b4b43d197f8b323dd531f51f80e861a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
     "localCoverImage": "/static/media/configure-active-directory-in-windows-server-2025/cover.png",
-    "lastEditedTime": "2026-11-14T11:55:00.000Z"
+    "lastEditedTime": "2026-11-14T11:56:00.000Z"
   }
 ]
