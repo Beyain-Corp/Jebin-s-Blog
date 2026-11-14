@@ -39,4 +39,3 @@ jobs:
             git commit -m "chore(notion): sync latest articles and images from Notion"
             git push
           fi
-
