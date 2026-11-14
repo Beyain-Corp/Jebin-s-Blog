@@ -1,5 +1,27 @@
 [
   {
+    "id": "418ae0c3-06ff-8066-ad29-c3fa76392173",
+    "title": "No-public",
+    "slug": "no-public",
+    "summary": "Test Summary",
+    "category": {
+      "name": "Test Project",
+      "color": "pink"
+    },
+    "tags": [
+      {
+        "name": "Test",
+        "color": "gray"
+      }
+    ],
+    "readTime": "1 Mins",
+    "date": "2026-11-12",
+    "published": true,
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/695ebcbd-9fc0-4541-ac4d-dc003cbd60ae/4e90b235-b118-42f8-aec8-667200a70d0e/Jebin_Joseph_J.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466U7ZGQQM3%2F20261114%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261114T100705Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQC05kKhYdPz%2BGWFG%2FBk0iU23xsfCSL8l558WAnqk2o%2BFAIhAO1xOxHRzO8uO6KKQTs1irrT774gN9Q8eBwP7vNR3RonKogECJr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igw9az2uTbqp8GUuekIq3APUE%2BD15F37qWjRTbudJmNtPj6mDisVLHYX7T1J93h6E1Rr9nl7FYVqyAv8CZGfYQtiwNDRvLcJ0cMW7lA2yK0NqFKux4dUFVw5n%2BpZZnaCGu9TVCZCXdZyXZmG4DWGeXRltLpoyFZStXndsJp94vbihNO1%2B%2B2GPxls11oTZ1T17WI5voNn%2FVjgCsy9JyjDTmtVEdL5liSIwilEjXhgckRKM0M155zRIcvbdRkN%2FTWnTbGMGAzRvF9UpLA9gxbiw%2BCOHnzljNMpdeNbFuU7YAZqFcbQO8L5JJXVBR8LWIIS%2F4WACgWRyOQzEmcHSRqMen93Fy%2F1A7wQfjGw0OeYEcUVM63qB0D2CcJdpeXJNLOYQb8hM0w95zqJ1ae1UM8lyjudRTQbdbx87B83wsNjx2z5bWkrcHIlPqb%2BDZ3hnjVD%2FW%2F0HgRQl6d7YzXhEqHw%2Fn%2Fn4xcudeA%2B1t7W2cIefGywtdfxOHZSmZLnR2hVlabde5Nr7DJCC%2BMHeYOOk042RzZA9AMeK6q5TecM2GcQTSxoa%2FZSZKe%2FAIrvvth1OiQ9Kqvfjnd2P55NcgHL4gHi%2Bj622RIoUIIdDaBoJOaQ22rMmbZ3yDN71ohEyhzpgJOtsHCko%2Fi1Oll4XtejXTCbw%2BDXBjqkAZHAyrBm%2BHU5nnoYRE49yTe63FssI2iuqaS0kyugSFJ%2BBHJSF%2FD0GH92PV4nZGoBsSjEQsABNvaf7e7nOCxymVX%2BBJctscf1XN9l%2FXH7V1a7b9GUz08Ifkmc5vC%2BuXS%2FUwqEpmS%2BI%2B1AbHOqaf5rFQxvcB5fpxCUl1NxeuBBXgHXsRL6AV7n0KFAvNF6Jy%2FFByKR2H7dlCF5keDSLBP8DYg4FDZH&X-Amz-Signature=9694b55c02de32c303f2aa5dd8b3792947e0b38f73ceb6eb2250198def3da443&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "localCoverImage": "/static/media/no-public/cover.png",
+    "lastEditedTime": "2026-11-14T10:05:00.000Z"
+  },
+  {
     "id": "418ae0c3-06ff-8023-a154-f6771836b3b1",
     "title": "Configure Active Directory in Windows Server 2025",
     "slug": "configure-active-directory-in-windows-server-2025",
@@ -17,7 +39,7 @@
     "readTime": "5 Minutes",
     "date": "2026-11-12",
     "published": true,
-    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/695ebcbd-9fc0-4541-ac4d-dc003cbd60ae/dffbeadf-d7af-4aa7-87f9-a9c2ab6153a9/Win2025.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QY7D45TO%2F20261114%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261114T100505Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDuDWfQyrB4lOd2oYOeYEsW9ssvaEDOTVrGhwej8M5DgAIhAMNakJI1iL%2FexNSmeeleIBfoZxxJG2Kkmi9dfx7MlziTKogECJn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgwQwOYaAaolbFsXIPsq3AOC1J4Biw1MGf5ojTvnjMBB9yQCihp9ByOjDDo%2BVCidAh9KSMW1lrNhcLfzqiqQxymD5agEIidfWq4xoIstDGscffLUWtTyVAaNFj8hY3kf9WaMSbnWaYwbSbZTWhHAbgWSkSAl5ndnrYKMYAsogol0izP0PCPth4RuUkyYWoCCV%2FSRx6jMArmQ9CC%2BBh7gowo%2Bzqu067Y5LfQpaqnqrH0Gqp5ix31gLdc7fGb2aW8PkZ0rvFPaZrB5MlbABmd3Yedjce4j0XQIrHT36dkrpEHBOzXvjfUC4xCNk1aHaM%2B4hEDL2cWNXi7aeSIEYUFRUsg54PMMtmgxFwXldHciaTtin%2BJ2%2BjKSL7Y0QZXp59Iol%2BgpgwPaNQvR7w6S%2F7u0f45ADojr1%2BAQSbHPavA2vszeXod%2BtRx1bcPxbCV0QqHrwCDItphMBLL5gpFyZp8IOqBPPsJC5olYrOzar%2Fe2%2FVp4azcCC%2FBInRjEJVEwpoxLeh%2BcKS%2FaB3LsC6jx7wQz5bq2f9R%2FrmyQC4fGV06b0cs7UeiYd3qx2pttySHXSNViDEmoUU96nSD88EBrItHRtXL66kbMA9QlNZcckPHZbqvGWX7l0S%2F4rBv7U83GNsfwqHea2Ep%2F1RbpmWuMWjCUweDXBjqkAQ%2BqRktmeLZSAMV3ka%2B6ozfzkEHXmN43KPhjJTnue5%2BV%2FlPUO5Cbe4%2BpNKqetrnfhh6w4JTy%2Ft%2Bg%2BbXlm8g9h9R21IwoyVFzEtyauULHrn%2BwEN8y%2FsEwdubxA72KIX8slum29w0D5m26Nu03N9U5xopUJvpxZ82GfYzfJw7fM5gOB2nedMzQrTAe4%2Fwm4k42BSX0ZZhjvfLAccPBTPu6XVyDfDFn&X-Amz-Signature=8d933740fa3bf714217eeae47ed3b4545f4e14f87ea428adf64ab73408ec6d70&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/695ebcbd-9fc0-4541-ac4d-dc003cbd60ae/dffbeadf-d7af-4aa7-87f9-a9c2ab6153a9/Win2025.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466U7ZGQQM3%2F20261114%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261114T100705Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQC05kKhYdPz%2BGWFG%2FBk0iU23xsfCSL8l558WAnqk2o%2BFAIhAO1xOxHRzO8uO6KKQTs1irrT774gN9Q8eBwP7vNR3RonKogECJr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igw9az2uTbqp8GUuekIq3APUE%2BD15F37qWjRTbudJmNtPj6mDisVLHYX7T1J93h6E1Rr9nl7FYVqyAv8CZGfYQtiwNDRvLcJ0cMW7lA2yK0NqFKux4dUFVw5n%2BpZZnaCGu9TVCZCXdZyXZmG4DWGeXRltLpoyFZStXndsJp94vbihNO1%2B%2B2GPxls11oTZ1T17WI5voNn%2FVjgCsy9JyjDTmtVEdL5liSIwilEjXhgckRKM0M155zRIcvbdRkN%2FTWnTbGMGAzRvF9UpLA9gxbiw%2BCOHnzljNMpdeNbFuU7YAZqFcbQO8L5JJXVBR8LWIIS%2F4WACgWRyOQzEmcHSRqMen93Fy%2F1A7wQfjGw0OeYEcUVM63qB0D2CcJdpeXJNLOYQb8hM0w95zqJ1ae1UM8lyjudRTQbdbx87B83wsNjx2z5bWkrcHIlPqb%2BDZ3hnjVD%2FW%2F0HgRQl6d7YzXhEqHw%2Fn%2Fn4xcudeA%2B1t7W2cIefGywtdfxOHZSmZLnR2hVlabde5Nr7DJCC%2BMHeYOOk042RzZA9AMeK6q5TecM2GcQTSxoa%2FZSZKe%2FAIrvvth1OiQ9Kqvfjnd2P55NcgHL4gHi%2Bj622RIoUIIdDaBoJOaQ22rMmbZ3yDN71ohEyhzpgJOtsHCko%2Fi1Oll4XtejXTCbw%2BDXBjqkAZHAyrBm%2BHU5nnoYRE49yTe63FssI2iuqaS0kyugSFJ%2BBHJSF%2FD0GH92PV4nZGoBsSjEQsABNvaf7e7nOCxymVX%2BBJctscf1XN9l%2FXH7V1a7b9GUz08Ifkmc5vC%2BuXS%2FUwqEpmS%2BI%2B1AbHOqaf5rFQxvcB5fpxCUl1NxeuBBXgHXsRL6AV7n0KFAvNF6Jy%2FFByKR2H7dlCF5keDSLBP8DYg4FDZH&X-Amz-Signature=f5f00bd9a4016e69f748d1375658bf4344754f2f7ed3979e442924bb39a760f7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
     "localCoverImage": "/static/media/configure-active-directory-in-windows-server-2025/cover.png",
     "lastEditedTime": "2026-11-14T07:08:00.000Z"
   }
