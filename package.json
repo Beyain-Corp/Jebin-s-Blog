@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "sync": "node scripts/sync-notion.mjs",
+    "sync:notion": "node scripts/sync-notion.mjs",
     "prebuild": "node scripts/sync-notion.mjs",
     "build": "next build",
     "start": "next start",
