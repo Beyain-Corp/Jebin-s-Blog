@@ -68,7 +68,7 @@ pipeline {
                             git commit -m "chore(notion): auto-sync published articles [skip ci]"
 
                             echo "[INFO] Pushing to GitHub main branch..."
-                            git push https://${GH_USER}:${GH_TOKEN}@github.com/Beyain-Corp/Jebin-s-Blog.git HEAD:main
+                            git push https://x-access-token:${GH_TOKEN}@github.com/Beyain-Corp/Jebin-s-Blog.git HEAD:main
                             echo "[SUCCESS] Successfully synchronized Notion to GitHub! GitHub Pages will auto-deploy."
                         else
                             echo "[INFO] No Notion changes detected. Repository is up to date."
