@@ -144,7 +144,10 @@ document.addEventListener('DOMContentLoaded', async () => {
               8+ years spearheading VMware ESXi/vCenter virtualization, hybrid cloud identity (Microsoft Entra ID), GPO hardening, and disaster recovery.
             </p>
             <div class="author-btn-group" style="flex-wrap: wrap;">
-              <a href="https://beyain-corp.github.io/Jebin_Portfolio/" target="_blank" rel="noopener" class="author-btn" style="background:#4f46e5; border-color:#6366f1; color:#fff;">
+              <!-- <a href="https://beyain-corp.github.io/Jebin_Portfolio/" target="_blank" rel="noopener" class="author-btn" style="background:#4f46e5; border-color:#6366f1; color:#fff;">
+                <i class="fa-solid fa-briefcase"></i> Portfolio
+              </a> -->
+              <a href="https://beyain-corp.github.io/ComingSoon/" target="_blank" rel="noopener" class="author-btn" style="background:#4f46e5; border-color:#6366f1; color:#fff;">
                 <i class="fa-solid fa-briefcase"></i> Portfolio
               </a>
               <a href="https://www.linkedin.com/in/jebinjosephj" target="_blank" rel="noopener" class="author-btn" style="background:#0a66c2; border-color:#0a66c2; color:#fff;">
