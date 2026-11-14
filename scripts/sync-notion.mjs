@@ -26,7 +26,7 @@ if (fs.existsSync(envPath)) {
 }
 
 const NOTION_API_KEY = process.env.NOTION_API_KEY || envConfig.NOTION_API_KEY || '';
-const DATABASE_ID = process.env.NOTION_DATABASE_ID || envConfig.NOTION_DATABASE_ID || '3b7d8cac-3561-809f-b015-c8ced8c0a70b';
+const DATABASE_ID = process.env.NOTION_DATABASE_ID || envConfig.NOTION_DATABASE_ID || '418ae0c306ff80169771de6884e226f5';
 
 function slugify(text) {
   return text

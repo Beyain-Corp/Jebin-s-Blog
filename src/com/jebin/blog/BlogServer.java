@@ -19,7 +19,7 @@ public class BlogServer {
     public static void main(String[] args) throws Exception {
         Map<String, String> env = loadEnv();
         String apiKey = env.getOrDefault("NOTION_API_KEY", "");
-        String dbId = env.getOrDefault("NOTION_DATABASE_ID", "3b7d8cac-3561-809f-b015-c8ced8c0a70b");
+        String dbId = env.getOrDefault("NOTION_DATABASE_ID", "418ae0c306ff80169771de6884e226f5");
         if (apiKey.isEmpty()) {
             System.err.println("⚠️ Warning: NOTION_API_KEY not found in environment or .env.local!");
         }
