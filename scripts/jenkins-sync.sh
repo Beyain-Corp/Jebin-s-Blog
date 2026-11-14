@@ -23,7 +23,7 @@ fi
 # 2. Pull latest changes from origin to stay up to date
 echo "Checking out latest main branch..."
 git fetch origin main || true
-git checkout main || true
+git checkout -B main origin/main || git checkout main || true
 git pull origin main --rebase || true
 
 # 3. Run Notion sync script
