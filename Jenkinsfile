@@ -1,53 +1,79 @@
 pipeline {
     agent any
 
+    // Run automatically every 2 minutes
     triggers {
-        // Runs every 2 minutes
         cron('H/2 * * * *')
     }
 
     options {
-        // Prevent concurrent builds
+        timeout(time: 10, unit: 'MINUTES')
         disableConcurrentBuilds()
-        // Keep build history manageable
-        buildDiscarder(logRotator(numToKeepStr: '50'))
     }
 
     environment {
+        // Notion Database ID for Blog
         NOTION_DATABASE_ID = '418ae0c306ff80169771de6884e226f5'
     }
 
     stages {
-        stage('Sync Notion to GitHub') {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Sync from Notion') {
             steps {
                 script {
-                    def credsList = []
-
-                    // 1. Inject NOTION_API_KEY if configured in Jenkins Credentials
+                    // Try to load Notion API Key from Jenkins Credentials ('notion-api-key' or 'NOTION_API_KEY')
                     try {
-                        withCredentials([string(credentialsId: 'NOTION_API_KEY', variable: '_T_KEY')]) {
-                            credsList.add(string(credentialsId: 'NOTION_API_KEY', variable: 'NOTION_API_KEY'))
+                        withCredentials([string(credentialsId: 'notion-api-key', variable: 'KEY')]) {
+                            env.NOTION_API_KEY = env.KEY
                         }
-                    } catch (Exception e) {
-                        echo "Notice: Credential 'NOTION_API_KEY' not found in Jenkins Credentials. Will check environment or .env.local."
-                    }
-
-                    // 2. Inject github-token for authenticated git push
-                    try {
-                        withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: '_T_U', passwordVariable: '_T_P')]) {
-                            credsList.add(usernamePassword(credentialsId: 'github-token', usernameVariable: 'GH_USER', passwordVariable: 'GH_TOKEN'))
+                    } catch (Exception e1) {
+                        try {
+                            withCredentials([string(credentialsId: 'NOTION_API_KEY', variable: 'KEY')]) {
+                                env.NOTION_API_KEY = env.KEY
+                            }
+                        } catch (Exception e2) {
+                            echo "[INFO] Using NOTION_API_KEY from environment or .env.local"
                         }
-                    } catch (Exception e) {
-                        echo "Notice: Credential 'github-token' not found in Jenkins Credentials."
                     }
+                }
+                sh '''
+                    echo "[INFO] Node environment check:"
+                    node -v || (echo "[ERROR] Node.js is required on Jenkins agent" && exit 1)
 
-                    // Execute sync with all discovered credentials
-                    withCredentials(credsList) {
-                        sh '''
-                            chmod +x ./scripts/jenkins-sync.sh
-                            ./scripts/jenkins-sync.sh
-                        '''
-                    }
+                    echo "[INFO] Running Notion Blog Sync Engine..."
+                    node scripts/sync-notion.mjs
+                '''
+            }
+        }
+
+        stage('Commit & Push to GitHub') {
+            steps {
+                // Uses working Jenkins Credential 'github-pat-jebin' (same as Jebin_Portfolio)
+                withCredentials([usernamePassword(credentialsId: 'github-pat-jebin', usernameVariable: 'GH_USER', passwordVariable: 'GH_TOKEN')]) {
+                    sh '''
+                        git config user.name "Jenkins Automation [OCI]"
+                        git config user.email "jenkins-bot@beyain-corp.com"
+
+                        # Stage Notion content artifacts
+                        git add data/ static/media/ src/data/ public/media/
+
+                        # Check if any changes were staged
+                        if ! git diff --staged --quiet; then
+                            echo "[INFO] New Notion articles or updates detected. Committing..."
+                            git commit -m "chore(notion): auto-sync published articles [skip ci]"
+
+                            echo "[INFO] Pushing to GitHub main branch..."
+                            git push https://${GH_USER}:${GH_TOKEN}@github.com/Beyain-Corp/Jebin-s-Blog.git HEAD:main
+                            echo "[SUCCESS] Successfully synchronized Notion to GitHub! GitHub Pages will auto-deploy."
+                        else
+                            echo "[INFO] No Notion changes detected. Repository is up to date."
+                        fi
+                    '''
                 }
             }
         }
@@ -55,7 +81,7 @@ pipeline {
 
     post {
         failure {
-            echo "Sync automation failed. Please ensure NOTION_API_KEY is configured in Jenkins Credentials or Global Environment Variables."
+            echo "[ALERT] Jenkins Notion sync pipeline failed on OCI instance (129.225.114.209:1010). Check console output."
         }
     }
 }
