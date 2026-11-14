@@ -2,8 +2,8 @@ name: Sync Notion Articles
 
 on:
   schedule:
-    # Run every 12 hours
-    - cron: '0 0,12 * * *'
+    # GitHub Actions hard minimum is 5 minutes (intervals < 5m are throttled by GitHub)
+    - cron: '*/5 * * * *'
   workflow_dispatch: # Allows manual run button in GitHub Actions tab
 
 permissions:
