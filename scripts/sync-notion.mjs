@@ -169,7 +169,13 @@ async function sync() {
     const props = page.properties;
     const title = props.Title?.title?.map(t => t.plain_text).join('') || 'Untitled';
     const slug = slugify(title);
-    const published = props.Published?.checkbox ?? true;
+
+    // Only upload if the Published checkbox is ticked (true)
+    const published = props.Published?.checkbox === true;
+    if (!published) {
+      console.log(`  ⏭️  Skipping draft: "${title}" (Published checkbox is unticked)`);
+      continue;
+    }
     
     const summary = props.Summary?.rich_text?.map(t => t.plain_text).join('') || '';
     const readTime = props.ReadTime?.rich_text?.map(t => t.plain_text).join('') || '5 Minutes';

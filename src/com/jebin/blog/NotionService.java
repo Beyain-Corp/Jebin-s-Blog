@@ -106,15 +106,18 @@ public class NotionService {
                 String title = extractPlainText(props.getAsJsonObject("Title").getAsJsonArray("title"));
                 String slug = slugify(title);
 
-                // Published
-                boolean published = true;
+                // Published - Only process if checkbox is checked
+                boolean published = false;
                 if (props.has("Published") && !props.get("Published").isJsonNull()) {
                     JsonObject pubObj = props.getAsJsonObject("Published");
                     if (pubObj.has("checkbox")) {
                         published = pubObj.get("checkbox").getAsBoolean();
                     }
                 }
-                if (!published) continue;
+                if (!published) {
+                    System.out.println("  Skipping draft post: " + title + " (Published is unticked)");
+                    continue;
+                }
 
                 // Summary
                 String summary = "";

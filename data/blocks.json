@@ -8,7 +8,244 @@
         "page_id": "417d8cac-3561-80ff-a34f-d175d9513460"
       },
       "created_time": "2026-11-13T04:10:00.000Z",
-      "last_edited_time": "2026-11-13T04:10:00.000Z",
+      "last_edited_time": "2026-11-13T09:54:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Establishing a robust device control policy ensures your organization's sensitive data remains secure from unauthorized peripheral access. Here is the complete process to create and deploy a policy:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Establishing a robust device control policy ensures your organization's sensitive data remains secure from unauthorized peripheral access. Here is the complete process to create and deploy a policy:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "417d8cac-3561-80c2-b435-d72a2fc7144a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "417d8cac-3561-80ff-a34f-d175d9513460"
+      },
+      "created_time": "2026-11-13T09:54:00.000Z",
+      "last_edited_time": "2026-11-13T09:54:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Access Policy Creation:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Access Policy Creation:",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "417d8cac-3561-801a-993c-ee51bd320ab9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "417d8cac-3561-80ff-a34f-d175d9513460"
+      },
+      "created_time": "2026-11-13T09:54:00.000Z",
+      "last_edited_time": "2026-11-13T09:54:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Log in to your ManageEngine Device Control Plus web console. Navigate to the ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Log in to your ManageEngine Device Control Plus web console. Navigate to the ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Policies",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Policies",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " tab on the main dashboard, click on ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " tab on the main dashboard, click on ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Policy Creation",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Policy Creation",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", and then select ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", and then select ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Create Policy",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create Policy",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ".",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ".",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "417d8cac-3561-80c5-8ab9-f9cd9be7f9c4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "417d8cac-3561-80ff-a34f-d175d9513460"
+      },
+      "created_time": "2026-11-13T09:54:00.000Z",
+      "last_edited_time": "2026-11-13T09:54:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3b7d872b-594c-8183-8796-0002ab042e06"
@@ -37,7 +274,244 @@
         "page_id": "417d8cac-3561-80ff-a34f-d175d9513460"
       },
       "created_time": "2026-11-13T04:10:00.000Z",
-      "last_edited_time": "2026-11-13T04:10:00.000Z",
+      "last_edited_time": "2026-11-13T09:54:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Establishing a robust device control policy ensures your organization's sensitive data remains secure from unauthorized peripheral access. Here is the complete process to create and deploy a policy:",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Establishing a robust device control policy ensures your organization's sensitive data remains secure from unauthorized peripheral access. Here is the complete process to create and deploy a policy:",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "417d8cac-3561-80c2-b435-d72a2fc7144a",
+      "parent": {
+        "type": "page_id",
+        "page_id": "417d8cac-3561-80ff-a34f-d175d9513460"
+      },
+      "created_time": "2026-11-13T09:54:00.000Z",
+      "last_edited_time": "2026-11-13T09:54:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Access Policy Creation:",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Access Policy Creation:",
+            "href": null
+          }
+        ],
+        "is_toggleable": false,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "417d8cac-3561-801a-993c-ee51bd320ab9",
+      "parent": {
+        "type": "page_id",
+        "page_id": "417d8cac-3561-80ff-a34f-d175d9513460"
+      },
+      "created_time": "2026-11-13T09:54:00.000Z",
+      "last_edited_time": "2026-11-13T09:54:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3b7d872b-594c-8183-8796-0002ab042e06"
+      },
+      "has_children": false,
+      "in_trash": false,
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Log in to your ManageEngine Device Control Plus web console. Navigate to the ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Log in to your ManageEngine Device Control Plus web console. Navigate to the ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Policies",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Policies",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " tab on the main dashboard, click on ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": " tab on the main dashboard, click on ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Policy Creation",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Policy Creation",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ", and then select ",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ", and then select ",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Create Policy",
+              "link": null
+            },
+            "annotations": {
+              "bold": true,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Create Policy",
+            "href": null
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": ".",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": ".",
+            "href": null
+          }
+        ],
+        "icon": null,
+        "color": "default"
+      },
+      "archived": false
+    },
+    {
+      "object": "block",
+      "id": "417d8cac-3561-80c5-8ab9-f9cd9be7f9c4",
+      "parent": {
+        "type": "page_id",
+        "page_id": "417d8cac-3561-80ff-a34f-d175d9513460"
+      },
+      "created_time": "2026-11-13T09:54:00.000Z",
+      "last_edited_time": "2026-11-13T09:54:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3b7d872b-594c-8183-8796-0002ab042e06"

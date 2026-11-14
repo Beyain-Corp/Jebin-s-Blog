@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!staticRes.ok) throw new Error('Could not load data/posts.json');
         allPosts = await staticRes.json();
       }
+      allPosts = allPosts.filter(p => p.published !== false);
       renderCategories();
       filterAndRender();
     } catch (err) {
