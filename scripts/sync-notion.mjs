@@ -166,39 +166,62 @@ async function sync() {
   const publicMediaDir = path.join(ROOT_DIR, 'public', 'media');
 
   for (const page of pages) {
-    const props = page.properties;
-    const title = props.Title?.title?.map(t => t.plain_text).join('') || 'Untitled';
+    const props = page.properties || {};
+    let title = 'Untitled';
+    if (props.Title && props.Title.title && Array.isArray(props.Title.title)) {
+      title = props.Title.title.map(t => t.plain_text).join('') || 'Untitled';
+    }
     const slug = slugify(title);
 
     // Only upload if the Published checkbox is ticked (true)
-    const published = props.Published?.checkbox === true;
+    const published = Boolean(props.Published && props.Published.checkbox === true);
     if (!published) {
       console.log(`  ⏭️  Skipping draft: "${title}" (Published checkbox is unticked)`);
       continue;
     }
     
-    const summary = props.Summary?.rich_text?.map(t => t.plain_text).join('') || '';
-    const readTime = props.ReadTime?.rich_text?.map(t => t.plain_text).join('') || '5 Minutes';
-    const date = props.Date?.date?.start || page.created_time?.split('T')[0] || new Date().toISOString().split('T')[0];
+    let summary = '';
+    if (props.Summary && props.Summary.rich_text && Array.isArray(props.Summary.rich_text)) {
+      summary = props.Summary.rich_text.map(t => t.plain_text).join('');
+    }
+
+    let readTime = '5 Minutes';
+    if (props.ReadTime && props.ReadTime.rich_text && Array.isArray(props.ReadTime.rich_text)) {
+      readTime = props.ReadTime.rich_text.map(t => t.plain_text).join('') || '5 Minutes';
+    }
+
+    let date = '';
+    if (props.Date && props.Date.date && props.Date.date.start) {
+      date = props.Date.date.start;
+    } else if (page.created_time) {
+      date = page.created_time.split('T')[0];
+    } else {
+      date = new Date().toISOString().split('T')[0];
+    }
     
-    const category = props.Category?.select ? {
+    const category = (props.Category && props.Category.select) ? {
       name: props.Category.select.name,
       color: props.Category.select.color
     } : null;
 
-    const tags = (props.Tags?.multi_select || []).map(t => ({
+    const tags = (props.Tags && props.Tags.multi_select ? props.Tags.multi_select : []).map(t => ({
       name: t.name,
       color: t.color
     }));
 
     // Handle Cover Image
-    const coverFiles = props['Cover Image']?.files || [];
+    const coverFiles = (props['Cover Image'] && props['Cover Image'].files) ? props['Cover Image'].files : [];
     let originalCoverUrl = null;
     let localCoverImage = null;
 
     if (coverFiles.length > 0) {
-      originalCoverUrl = coverFiles[0].file?.url || coverFiles[0].external?.url;
-      const fileName = coverFiles[0].name || 'cover.png';
+      const firstCover = coverFiles[0];
+      if (firstCover.file && firstCover.file.url) {
+        originalCoverUrl = firstCover.file.url;
+      } else if (firstCover.external && firstCover.external.url) {
+        originalCoverUrl = firstCover.external.url;
+      }
+      const fileName = firstCover.name || 'cover.png';
       const ext = path.extname(fileName) || '.png';
       const staticDest = path.join(staticMediaDir, slug, `cover${ext}`);
       const publicDest = path.join(publicMediaDir, slug, `cover${ext}`);
@@ -244,9 +267,15 @@ async function sync() {
       
       // If any block is an image, download it locally to prevent S3 expiration
       for (const block of blocks) {
-        if (block.type === 'image') {
-          const imgUrl = block.image?.file?.url || block.image?.external?.url;
-          if (imgUrl && block.image?.type === 'file') {
+        if (block.type === 'image' && block.image) {
+          let imgUrl = null;
+          if (block.image.file && block.image.file.url) {
+            imgUrl = block.image.file.url;
+          } else if (block.image.external && block.image.external.url) {
+            imgUrl = block.image.external.url;
+          }
+
+          if (imgUrl && block.image.type === 'file') {
             const ext = '.png';
             const staticImgDest = path.join(staticMediaDir, slug, `block-${block.id}${ext}`);
             const publicImgDest = path.join(publicMediaDir, slug, `block-${block.id}${ext}`);
@@ -295,7 +324,7 @@ async function sync() {
   fs.writeFileSync(path.join(rootDataDir, 'blocks.json'), JSON.stringify(blocksCache, null, 2), 'utf-8');
 
   console.log(`\n🎉 Successfully synced ${posts.length} posts and cached to data/ & src/data/!`);
-  posts.forEach(p => console.log(`  - [${p.published ? 'Published' : 'Draft'}] ${p.title} (${p.category?.name || 'Uncategorized'})`));
+  posts.forEach(p => console.log(`  - [${p.published ? 'Published' : 'Draft'}] ${p.title} (${(p.category && p.category.name) ? p.category.name : 'Uncategorized'})`));
 }
 
 sync().catch(err => {
