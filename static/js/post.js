@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           <div class="author-pill">
             <img src="static/img/jebin.jpg" alt="J Jebin Joseph" class="author-avatar">
             <span>J Jebin Joseph</span>
-            <span style="color:var(--text-dim); font-size:0.75rem; font-weight:normal;">• IT Infrastructure Lead</span>
+            <span style="color:var(--text-dim); font-size:0.75rem; font-weight:normal;">• IT Executive</span>
           </div>
           ${formattedDate ? `<div>📅 ${formattedDate}</div>` : ''}
           ${post.readTime ? `<div>⏱ ${escapeHtml(post.readTime)}</div>` : ''}
@@ -136,8 +136,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               <img src="static/img/jebin.jpg" alt="J Jebin Joseph" class="author-card-avatar">
               <div>
                 <strong style="color:var(--text-main); font-size:1rem; display:block;">J Jebin Joseph</strong>
-                <p style="font-size:0.75rem; color:var(--cyan); font-weight:500;">IT Infrastructure Lead</p>
-                <p style="font-size:0.7rem; color:var(--text-dim);">Orchid Pharma Ltd</p>
+                <p style="font-size:0.75rem; color:var(--cyan); font-weight:500;">IT Executive</p>
               </div>
             </div>
             <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.5; margin-bottom:1rem;">
