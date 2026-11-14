@@ -8,17 +8,12 @@
       "name": "Active Directory",
       "color": "brown"
     },
-    "tags": [
-      {
-        "name": "Test",
-        "color": "gray"
-      }
-    ],
+    "tags": [],
     "readTime": "5 Minutes",
     "date": "2026-11-12",
     "published": true,
-    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/695ebcbd-9fc0-4541-ac4d-dc003cbd60ae/dffbeadf-d7af-4aa7-87f9-a9c2ab6153a9/Win2025.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YV5BY5LJ%2F20261114%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261114T115306Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCICAqMoxS6mjfV79gQRgJYwxAvcQj9Ji3IWbojAXKrv72AiBp7cBuOLCMADsSgd23i5JEutLoKnfZTmEJfvE3HPh7WCqIBAiZ%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMt6uVC%2FR0BlFQ9N2%2FKtwDnSq%2FDkz8Ximklis4LIctEu84MT1EhQajCE%2F9PyyqamJkVEcclZwnPzNgy%2F17c4u%2F%2BPvy9nRebWqa9hehRa2oFCccDf2Rl9yiO8Ax5Wxmu28OEXZeQmeCs8dDDcSyut3yIFAizA%2F8ievtgzHKLxOubeUsjW22XBl%2BVlUe1ESxWfqeAKw87FM%2FkND1XxEg4LCQK3jufM7ntggnvjEVYeMZadW%2BLw42OK0wqrt%2Fi6NrYE82b1zGW%2FIBi0qxAmxfetFv3DQZDWFiOhEyzcEmBZSDaecMtm%2Bi05TOq%2F6IWe7dMnk7iPAkKV%2FB2HCSLBg2HjWdTdFy1bcCm19MGCp4CUrWHnwMAscoJN3FqDGUD9mgW%2F9uW6kwxDGpYmbZ8xDfUqIKX6rwCt4gmg7x41ZZJSpeMbJZJlb%2FjHUdYNLy5BmlVSkQvtT1jxh8YM4wPu46ZRzohuRrkvlEkDxOrsgj6bUP1ibholqEMjec3noe%2F2mZmXsHC1uXbKualNyNRV82UDHEufGJVxnBGZNk8j4y1CA9iK%2BMo5snl2M62k374rSYcQMUQEQ1sn9it9KYDfb2Oy4%2FwJdgb%2F2mCfgNDL%2FrRH7gWVfAiVi9SGXOdIwv3r5RizMrbHJTYvqx%2FbeD5oww4MLg1wY6pgFhREgZO0NOCC54aoMENpxo2sZhZryNfyVLi8ogWaebJhrcm4qqbIGOY33HfTFjYEdFyVG2%2FTUlpGnukPewNLygrgvctcbuc0Xb%2F3zayrBXECWnSKNaPd4vL8Bk0HRUhBHUBQrUjYbJpWTlhpSb7O5Zxakn8IHpccdWYILOsilDQ7XCERjlewdtG0wvToTB2D7K5ytT2pM4CuGjBVk2wPHUD7gW7tjf&X-Amz-Signature=1c5f0b307732dc37af6860bae8e7a36ede1dcf35dabb6092dbb09b16a7840c17&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+    "coverImage": "https://prod-files-secure.s3.us-west-2.amazonaws.com/695ebcbd-9fc0-4541-ac4d-dc003cbd60ae/dffbeadf-d7af-4aa7-87f9-a9c2ab6153a9/Win2025.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QDK5TA6H%2F20261114%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261114T115505Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIDCoC2jJ7Ucg5L3XsaJiQAjofk6QIbCHgMEfLL0tTB2HAiEAr%2B92C3tPX1FaO%2FsJClMrGq132VWQlZAFwB5Bs35Rz9AqiAQImf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDD6kXHjIzC5a3bUQsCrcA0qaYpjD0jnowWFNmJ%2F11wp8BwZ9kChRmRWsm8O1yU3nqbO4JyAVMt99FpJqcK8h1o6Uh%2BgTq2CdIBPPVnINEg152EJ%2F0AJ8YvyjvKKC7QIGhuTljT7VnXvYvXr8RaTYdX57iCbv7ERNbyoiWAJQ3Co3v%2FeJCGFsMBqH2cagcvcVH%2FtpuFnCyrV9gV2Q5dyIY2OmZTlOCiT7qS%2BXUq4Vq7gd6ysqiGaHFwa6ZaXglqs8gKaYrgait2xl0SP5xPtuEQlBde1wViJNinl6qSsEPGjVgRpL8F%2FHvOqYfvdax%2Bp6OoFAvYdTjbtxEUlC65iii2UYfCCz6PPT%2Bgl4KNKkx4QDCe%2FStjuYc7a3velUQ5P%2ByYCwI8fPKB6VeIF3N%2FKAOaiqCqk89BsWxQ%2BvCH5n96%2FBKXLkiqHai0yGNg3A41IDim1UL5fio%2BkoGH4pMUWHX8I5hbdSHQkMS7I4YcC58S68krsbob6rLxHC7Y2VFh7QL%2FlI%2Fz%2FNj0LbqTqRbYT7AhJLh4Ckg7S0c2Qim6FwsPxFX%2FUU%2Bl%2FMvpdjiFSpu4MRq1DV%2BSAQNyZd2dwm%2B%2BLk2Vr5dfiQ9payCqkwn26TFvsxEjABBOp8y4cjAHQiNVZr%2FP9rRp%2F4QaVPxmo6MInC4NcGOqUBAfIr4e6STsn2HLF%2BaP5XeiCVxIk8IMLlyLTH08jbjILtG9N6GSvMcSvgoveWbuWbBiwwr%2BrCvcf33%2BI2SilFYom7LX%2FClNQvWTEc1An5qnKDyqSaQWLPMSqj%2FMo7C1rhi4T3O7UPgg65uJkHkdmDax0XU0hwp3pzxNOCIDjyCvDj58DoS%2Blxg8EASwBe99weCB23VqyU5KX62aDdRjLsikBPc7Ks&X-Amz-Signature=6d2aa6c631a43ac755c0ec06ad988cee4a4859268ea6770191610e5515e8d9f2&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
     "localCoverImage": "/static/media/configure-active-directory-in-windows-server-2025/cover.png",
-    "lastEditedTime": "2026-11-14T07:08:00.000Z"
+    "lastEditedTime": "2026-11-14T11:55:00.000Z"
   }
 ]
