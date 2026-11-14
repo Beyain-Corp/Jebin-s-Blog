@@ -88,18 +88,18 @@ public class BlogServer {
         public void handle(HttpExchange exchange) throws IOException {
             String path = exchange.getRequestURI().getPath();
             if (path.equals("/") || path.equals("/index.html")) {
-                serveFile(exchange, Paths.get("static", "index.html"), "text/html; charset=utf-8");
+                serveFile(exchange, Paths.get("index.html"), "text/html; charset=utf-8");
             } else if (path.startsWith("/static/")) {
                 new StaticFileHandler().handle(exchange);
             } else if (path.equals("/post") || path.equals("/post.html")) {
-                serveFile(exchange, Paths.get("static", "post.html"), "text/html; charset=utf-8");
+                serveFile(exchange, Paths.get("post.html"), "text/html; charset=utf-8");
             } else {
                 // Try serving from static root if exists, else 404
                 Path staticPath = Paths.get("static", path.substring(1));
                 if (Files.exists(staticPath) && !Files.isDirectory(staticPath)) {
                     serveFile(exchange, staticPath, getMimeType(staticPath.toString()));
                 } else {
-                    serveFile(exchange, Paths.get("static", "index.html"), "text/html; charset=utf-8");
+                    serveFile(exchange, Paths.get("index.html"), "text/html; charset=utf-8");
                 }
             }
         }
@@ -108,7 +108,7 @@ public class BlogServer {
     static class PostPageHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
-            serveFile(exchange, Paths.get("static", "post.html"), "text/html; charset=utf-8");
+            serveFile(exchange, Paths.get("post.html"), "text/html; charset=utf-8");
         }
     }
 

@@ -67,9 +67,9 @@ The Java backend connects to Notion, pulls down new or updated articles, and dow
 │   ├── BlogServer.java             # Java HTTP server & routing
 │   ├── NotionService.java          # Notion API integration & image downloader
 │   └── Models.java                 # Data models
+├── index.html                      # Homepage (Search, Categories, Post Cards)
+├── post.html                       # Article View (Hero, TOC, Notion blocks)
 ├── static/
-│   ├── index.html                  # Homepage (Search, Categories, Post Cards)
-│   ├── post.html                   # Article View (Hero, TOC, Notion blocks)
 │   ├── css/
 │   │   ├── style.css               # Homepage & global design system
 │   │   └── post.css                # Article typography, code blocks, callouts
